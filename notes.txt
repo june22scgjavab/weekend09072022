@@ -50,10 +50,12 @@ Q How we write a program or what are the building blocks of a programming langua
     
   **Iterations/loops(Repeated task):-
    We eat, We sleep, We attend the session
-------------------------------------------------------------------------------------------------------------* identifiers/names===> We all have names. name of a person. model name of a car. model name of a laptop.
+------------------------------------------------------------------------------------------------------------
+* identifiers/names===> We all have names. name of a person. model name of a car. model name of a laptop.
 ---------------------------------------------------------------------------------------------------------------
 * operators ( operations )====> adding , multiplying , subtract
---------------------------------------------------------------------------------------------------------------- conversion ( converting from one datatype to another)====> from water we created ice( this is an example
+--------------------------------------------------------------------------------------------------------------- 
+conversion ( converting from one datatype to another)====> from water we created ice( this is an example
 where we converted liquid into a solid). We will talk about datatype conversion. 
 --------------------------------------------------------------------------------------------------------------
 
