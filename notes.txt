@@ -1,0 +1,6428 @@
+
+
+Q What is a program/code?
+A set of instructions.
+
+Q How dow we write a program/code?
+A We have to select and go with a programming language.
+
+Q What is a programming language?
+A A programming language is a language which is understood by a compiler(it converts the code from higher 
+level language to machine level language) and ultimately converted into a set of instructions given to 
+the system in the form of machine level language. 
+
+Q Give some examples of programming languages
+A C,C++,Python,Java,C#,VB DOTNET.
+
+---------------------------------------------------------------------------------------------------------------
+
+Q How we write a program or what are the building blocks of a programming language?
+
+* keywords===> keywords are the vocabulary of the programming language which is understood by the compiler.
+  So every programming language is having its set of vocabulary. 
+* datatypes===> datatypes decide what type of values we can use or address like . Are we planning to
+  store a number or we are planning to store a character like a or b or c. Or we are planning to
+  store a String ( a group of characters ===> example name of a person like Ashok or designation Analyst)
+* variables====> variables are used to store the data or hold the data.They are called as variables
+  because they can store different values on different executional point.
+   int num;
+   a bottle is similar to num.
+   1 liter is similar to int.
+   a bottle of 1 liter is similar to int num;
+   1 liter bottle is having water which is similar to num=10;
+   num=20;  That means we have changed the value which is similar to 1 liter of bottle is now stored
+   with 1 liter of milk.
+  
+    
+  In the above line int is a datatype and num is a variable. Which means num variable can store the 
+  data of numeric(number) type.
+  num=10;
+* programming constructs like===>
+  **decision making==> if it is raining today 
+                           I will take an umbrella
+                     if it is raining heavily 
+                           I will take a raincoat
+                     otherwise 
+                           I won't take umbrellar or the raincoat
+
+   When you make a customer call===> They say something like press 1 for english
+   press 2 for hindi
+    
+  **Iterations/loops(Repeated task):-
+   We eat, We sleep, We attend the session
+------------------------------------------------------------------------------------------------------------* identifiers/names===> We all have names. name of a person. model name of a car. model name of a laptop.
+---------------------------------------------------------------------------------------------------------------
+* operators ( operations )====> adding , multiplying , subtract
+--------------------------------------------------------------------------------------------------------------- conversion ( converting from one datatype to another)====> from water we created ice( this is an example
+where we converted liquid into a solid). We will talk about datatype conversion. 
+--------------------------------------------------------------------------------------------------------------
+
+We have a bottle of 1 ltr and we need to store water in it and after sometime we need to store a litr of milk.
+
+     1. 1 litr bottle.
+     2. bottle containing water.
+     3. we will throw the water out of the bottle.
+     4. We will store milk in the bottle.
+
+      int num; // step 1
+      num=10;  // step 2
+      num=20; // step 3 and step4
+
+   We have declared a variable of int type and then we stored the value 10 and letter the value within
+   num os overwritten by the value 20.
+ ----------------------------------------------------------------------------------------------------------
+
+class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+--------------------------------------------------------------------------------------------------
+How to write a simple java code/program?
+1)  write a class with an identifier/name with opening({) and closing(}) braces. 
+
+   class Welcome{}        
+
+* class is a keyword for defining a block. 
+* Student can be taken as class. Which means Student class/category which can be related with a set of attributes. Attributes related with student can be roll number, name , class/standard. A set of behaviours/actions. Actions/behaviours study, writing exam.
+class Student{}
+class Employee{}
+class Book{}
+
+2)
+ a) We need to define a method/function withing the class. That method is the main method.main method is the
+entry point of execution for the Java code.
+main is a method with opening ({) and closing (}) braces. 
+ 
+class Welcome {
+    main(){
+
+    }
+
+}      
+b) with the main method we need to have the return type and the parameters.
+  Example can be if cooking is a method/process/action. For cooking the cook or the chef needs to be provided
+  with the raw material like vegetables,spices,oil etc and after cooking ( processing ==> different steps /
+  stages of cooking) the chef/cook will return the cooked food.
+
+ 1) cooking is a method
+ 2) the raw materials are like the inputs/parameters to the cooking method.
+ 3) The cooked food is the output returned by the process cooking.
+
+ class Welcome {
+    void main(String args[]){
+
+    }
+  }
+main is like cooking.
+String args[] is like the inputs/parameters to the main and as we know main is similar to cooking.
+void is the return type just like the return processed/cooked food is from the cooking process.
+void means returning nothing. So it would be similar to if the cook is cooking the food with raw items
+and he/she is not returning the cooked food but consuming the cooked food.
+void means the method is not returning any value. 
+Here in the parameter String is a type/data types args is like variable and [] are used for array. 
+array is just like a tray for storing eggs. String args[] means args is an array of String type.
+int num[] we say as num is an array of int type.
+
+class Cook {
+   void cooking ( egg1,egg2,egg3,egg4){
+
+   }
+ }
+
+class Cook {
+   void cooking ( tray of eggs ) {
+
+   }
+
+ }
+
+c) We have to use public and static with the main method. public means the method is accessible everywhere.
+   and static means we have only one action at a time. 
+
+class Welcome {
+   public static void main(String args[]){
+
+   } 
+ }  
+
+so if the cooking process is witnessed by other entities , then we say it as with public access.
+and static is we will be having only one process for the food ordered.
+
+3) We need to do something within the main method.
+   In our case we are going to print Hello World! Welcome to Java Programming!
+
+class Welcome {
+   public static void main(String args[]){
+                      Hello World! Welcome to Java Programming!
+   } 
+ }  
+The above code is not fine until unless we give the instruction to print.
+   System.out.println();
+
+class Welcome {
+   public static void main(String args[]){
+             System.out.println("Hello World! Welcome to Java Programming!");
+   } 
+ }  
+Observations: 
+{} are there ===> to represent the opening and closing of a block. Class is a block and main is also a 
+   block.
+[] ==========> This is used to represent the array.
+class,public,static,void ========> keywords. In java keywords are written is smallcase. If we are not
+writing the keywords in smallcase , we get compilation error.
+JAVA IS A CASE SENSITIVE LANGUAGE. So we have to be careful while writng the keywords and the predefined
+classes.
+
+Welcome,main,println,out,args,String,System=====> Welcome,String and System are classes. Welcome class is a 
+is a user defined class whereas String and System are predefined classes. 
+
+main is a method which is the entry point of the java code.
+println is again a method which is predefined.
+out is an object/variable withing the System class.
+args is again a variable/object name.
+
+Hello World! Welcome to Java Programming!====> is a string and we are enclosing it within "".
+
+Every executable statement should end up with ; which marks the end of a statement.
+Every block should end up with closing brace (}).
+
+Class name should start with Uppercase followed by lowercase.
+example Student, Employee, Book, Welcome
+If a class name consists of multiple words, Every word's first character should be in uppercase example
+StudentDetails, EmployeeDetails
+
+methods and object/variable names 
+
+If the method or the object/variable is having single word , then all the characters are in smallcase.
+
+example main(), display(), show()
+
+same is with the variable and object. example
+
+num, name, args
+
+If the method or the object/variable is having multiple words, then the first word's all the characters
+in lowercase and the second word onwards, first character is in uppercase example
+
+ displayData(), showDetails().
+
+Same is with the variable and object names.
+
+employeeName, studentName.
+------------------------------------------------------------------------------------------------------------- 
+Common mistakes
+
+Class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+// Here the keyword class is starting with uppercase.
+
+
+class welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+// Currently no error because writing the class name starting with uppercase is a convention. Convention 
+we may follow or we may skip.But it is always good to follow the convention.
+
+class welcome {
+	public static void main(string[] args) {
+		system.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+
+ We get compilation error because we cannot afford writing the predefined classes starting with lowercase
+but we can write user defined classes starting with lowercase but we should avoid as it is not the convention.
+Conclusion is for user defined classes we may follow or skip the convention but for predefined classes 
+like System and String we have to follow the convention as it becomes mandatory to follow the convention
+otherwise it gives compilation error.
+
+class welcome {
+	public static void main(String[] STR) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+
+
+str/args is user defined and we can follow any case but convention is writing it in smallcase.
+
+
+class welcome {
+	public static void main(String[] ARGS) {
+		System.Out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+out is a predefined object or a variable , we cannot change the case for out.
+
+
+main and println should be in smallcase
+
+
+class welcome {
+	public static void Main(String[] ARGS) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+
+//So no compilation error but no output. 
+
+class welcome {
+	public static void main(String[] ARGS) {
+		System.out.Println("Hello World! Welcome to Java Programming!");
+	}
+}
+above code will show compilation error as println is a predefined method which cannot start with uppercase.
+-----------------------------------------------------------------------------------------------------------
+The magic of \n or println
+
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+		System.out.println("Hi Friends!!!!!!");
+}
+}
+println(); After printing the content it will take the cursor to the new line so that if
+we have some more content to be printed , that content is printed in the next line.
+   Hello World!!!!
+   Hi Friends
+
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.print("Hello World! Welcome to Java Programming!");
+		System.out.println("Hi Friends!!!!!!");
+}
+}
+   Hello World! Welcome to Java Programming!Hi Friends!!!!!!   
+
+
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.print("Hello World! Welcome to Java Programming!\n Hi Friends!!!!!!");
+		
+}
+}
+[ Printing Hello World! Welcome to Java Programming and printing Hi Friends in a new line as
+  Hi Friends is preceeded by \n and after printing Hi Friends cursor remains in the same line of 
+ Hi Friends as we have used print method]
+
+
+class Welcome {
+	public static void main(String[] args) {
+		System.out.print("Hello World! Welcome to Java Programming!\n Hi Friends!!!!!! I am fine \n I am good");
+		
+}
+}
+Hello World! Welcome to Java Programming!
+Hi Friends!!!!!! I am fine
+I am good
+
+
+ class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!\n Hi Friends!!!!!!");
+		
+}
+}
+[ Printing Hello World! Welcome to Java Programming and printing Hi Friends in a new line as
+  Hi Friends is preceeded by \n and after printing Hi Friends cursor goes to a new line because of println.]
+
+
+------------------------------------------------------------------------------------------------------------
+  
+class Welcome {
+	public static void main(String[] args) {
+		System.out.println("Hello World! Welcome to Java Programming!");
+	}
+}
+System.out.println is similar to printf in C and cout in C++
+--------------------------------------------------------------------------------------------------------------
+Some of the points related to the java coding:
+
+1) Every method will be within the class.
+2) Every code should have atleast one main method for executing the code or the program.
+3) Statements should end up with ;.
+4) blocks like class and methods should start with { (opening brace ) and should end up with } (closing brace).
+5) Write the class name starting with uppercase followed by all smallcase characters.
+6) If the class is having multiple words, every word's first character will be in uppercase.
+7) the methods and variables,objects should be written entirely in smallcase if it is having a single word.
+8) for multiple words method and variables/objects first word entirely in smallcase and second word onwards
+   first character in uppercase and rest character in lowercase.
+----------------------------------------------------------------------------------------------------------
+// The variables,datatypes and println
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.println(studentMarks);
+	   System.out.println(marks);
+       }
+}
+// println will take the cursor into the nextline before executing the next statement
+Output: 
+   80
+   90
+
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.print(studentMarks);
+	   System.out.print(marks);
+       }
+}
+// print keeps the cursor on the same line after printing the output
+
+8090
+
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.print("studentMarks");
+	   System.out.print("marks");
+       }
+}
+
+studentMarksmarks
+
+// We dont put variable names within quotes . If we are putting them within quotes they are displayed
+as String and they are not considered as variable name and so we are not able to see the value stored
+int the variable.
+
+
+class Welcome {
+	public static void main(String[] args) {
+	   int studentMarks=80;	
+           int marks=90;
+           System.out.println("studentMarks "+studentMarks);
+	   System.out.println("marks "+marks);
+       }
+}
+
+
++ is used for concatenation with a string.
+
+
+--------------------------------------------------------------------------------------------------------------
+Q Where to save the code and with what file name and extension?
+A The first part of the filename can be anything of our choice ( avoid
+  having space in between) and keep the extension as .java.
+
+Example, we can keep the file name and class name same or different.
+
+Welcome.java ( java is the extension of the file which is holding the code).
+
+class Welcome {
+     public static void main(String args[]) {
+     System.out.println("Hello");
+    }
+}
+
+Even it is possible to keep the file name and class name different.
+
+So suppose , if we are giving the file name as Hello.java
+
+class Welcome {
+   public static void main(String args[]) {
+     System.out.println("Hello");
+    }
+}
+
+
+We have a case where we have to keep the file name and class name same
+otherwise the program will show compilation error. The situation in which
+we have to keep the class name and file name same, if we declare the class
+with public keyword.
+
+public class Welcome {
+    public static void main(String args[]) {
+    System.out.println("Hello");
+   }
+ }
+
+In the above scenario we have to give the file name as Welcome.java. 
+We cannot give any other name to the file as the class is declared as public.
+
+SO IF THE CLASS IS DECLARED AS PUBLIC , FILE NAME AND CLASS NAME SHOULD BE SAME.
+---------------------------------------------------------------------------------------------------------------
+Whenever we are writing the java code and not using any IDE, we have
+to first install JDK ( Java Development Kit) in the system. Without the 
+Java development kit , we wont be allowed to compile our code. 
+
+javac.exe ( So when we install the development kit ,we get the javac.exe
+(which is a java compiler)
+
+javac Welcome.java  ( while compiling we mention javac <filename>
+    |
+    |
+    |
+ Welcome.class(bytecode) [ bytecode is an intermediate language and which is somewhere between high level 
+                          language and low level language ]
+    |
+    |
+    |
+java Welcome ( java.exe is the interpreter which is in the process of converting
+               bytecode into machine lavel language )    ( while interpreting we mentiom java <classname> )
+
+
+--------------------------------------------------------------------------------------------------------------
+JRE (IF we install JRE , we are only able to execute the code)
+But if we install JDK we can use the tools for compiling the code and
+also to execute(conversion from high level language to low level language/interpret the java code)
+---------------------------------------------------------------------------------------------------------------
+Q Than what is the usage of IDE?
+A IDE ( Integrated Development Environment ). This is the software through which we can compile, interpret,debug, test our java code. So basically IDE uses the compiler and interpreter to compile and
+interpret our code)
+
+
+Q How we can install JDK in our system? ( Assuming we are installing JDK17 through installer)
+A https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+
+Q What we do after downloading the installer?
+A double click on the downloaded exe file. It will install jdk in your system.
+
+
+Q Where we can check the installation?
+A C:\Program Files\Java
+
+Q Still we are not able to check the version with java -version.
+A To see the output of the command we have to set the path for the installation.
+
+------------------------------------------------------------------------------------
+Q Do we need both .java and .class file for executing our java code?
+A No. We only need the .class file for executing the code.
+
+------------------------------------------------------------------------------------
+Q So when we require both the files?
+A When we are the coder and we want to write and modify the code and we want to execute the code.
+  Then we require both source code(.java) and the code to be executed which is in the file .class extension.
+------------------------------------------------------------------------------------------------------
+
+Q From where we can download the eclipse IDE?
+A https://www.eclipse.org/downloads/
+
+Q While installation which one to choose?
+A Eclipse IDE for Java developers.
+
+Q After download what we need to do?
+A We need to extract the downloaded zipped file.
+
+Q What happens after extraction of zipped file?
+A it creates a folder with the name eclipse.
+
+Q How to start the eclipse application?
+A We get an eclipse.exe which we can double click to start the IDE working and even we can create a desktop
+shortcut if the shortcut is not created on the desktop.
+
+Q After starting the application what we do?
+A We get an eclipse IDE launcher dialog box.Where we mention the workspace path.
+We wont alter the workspace path.The default path is 
+C:\Users\PERSONAL\eclipse-workspace.Then click on launch.
+
+
+
+
+Q What is workspace?
+A Workspace contains all the project folders. So basically an workspace is a collection of project folders.
+
+Q What we do next?
+A We need to create a java project with any name.
+File ====> New =====> Java Project====> provide a project name for example we gave the 
+project name as first and click on finish button.
+
+Q What we need to do next after creating the workspace and project?
+A We need to create a java file which will have the code.
+Right click on the project name shown in the package explorer---->New-----> class--->
+Provide the class name.
+Check the checkbox for having main. 
+
+Q What next?
+A we complete the code in the code editor.
+
+
+Q What next?
+A Right click on the code editor===> Run as java application. We will be able to see
+the output on the console window.
+
+Q Do we have any shortcut for System.out.println() in IDE?
+A Yes ... write syso and press ctrl+spacebar.
+
+------------------------------------------------------------------------------------------------
+
+So suppose we created HelloWorld.java
+
+  class HelloWorld {
+   public static void main(String args[]){
+    System.out.println("Hello");
+   }
+  }
+
+ javac HelloWorld.java
+
+   |
+   |
+ HelloWorld.class
+   |
+   |
+java HelloWorld
+--------------------------------------------------------------------------------------------------------------  
+
+In java we have 8 primitive datatypes:-
+* char ( Storing a character)
+( Storing a whole number)
+* byte
+* short
+* int
+* long
+( Storing decimal values)
+* float
+* double
+( boolean data like true or false)
+* boolean 
+
+
+Data types in Java are classified into two types:
+
+Primitive—which include char,byte,short,int,long
+Non-primitive—which include Classes, Interfaces, and Arrays.
+
+
+-------------------------------------------------------------------------------------------------------------
+Type	Size	Range of values that can be stored
+byte	1 byte	−128 to 127
+short	2 bytes	−32768 to 32767
+int	4 bytes	−2,147,483,648 to 2,147,483,647
+long	8 bytes	9,223,372,036,854,775,808 to 9,223,372,036,854,755,807
+float	4 bytes	3.4e−038 to 3.4e+038
+double	8 bytes	1.7e−308 to 1.7e+038
+char    2 bytes  It has a minimum value of 
+                 ‘u0000’ (or 0) and a maximum value of ‘uffff’ (or 65,535, inclusive)
+boolean 1 bit    true or false
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+Java Tokens
+A token is the smallest element in a program that is meaningful to the compiler. 
+These tokens define the structure of the language. The Java token set can be divided 
+into five categories: Identifiers, Keywords, Literals, Operators, and Separators.
+
+1. Identifiers
+Identifiers are names provided by you. These can be assigned to variables, methods, functions, classes etc. to uniquely identify them to the compiler.
+
+2. Keywords
+Keywords are reserved words that have a specific meaning for the compiler. They cannot be used as identifiers. Java has a rich set of keywords. Some examples are: boolean, char, if, protected, new, this, try, catch, null, threadsafe etc.
+keywords
+
+S.No	Keyword	Usage
+1.	abstract	Specifies that a class or method will be implemented later, in a subclass 
+2.	assert	        Assert describes a predicate placed in a java program to indicate that the developer thinks that the predicate is always true at that place.
+3. 	boolean  	A data type that can hold True and False values only 
+4.	break	        A control statement for breaking out of loops.
+5.	byte	        A data type that can hold 8-bit data values 
+6.	case	        Used in switch statements to mark blocks of text
+7.	catch	        Catches exceptions generated by try statements
+8.	char 	        A data type that can hold unsigned 16-bit Unicode characters
+9.	class	        Declares a new class
+10.	continue	Sends control back outside a loop 
+11.	default	        Specifies the default block of code in a switch statement
+12.	do	        Starts a do-while loop
+13.	double	        A data type that can hold 64-bit floating-point numbers
+14.	else	        Indicates alternative branches in an if statement 
+15.	enum	        A Java keyword is used to declare an enumerated type. Enumerations extend the base class.
+16.	extends	        Indicates that a class is derived from another class or interface 
+17.	final   	Indicates that a variable holds a constant value or that a method will not be overridden
+18.	finally	        Indicates a block of code in a try-catch structure that will always be executed
+19.	float	        A data type that holds a 32-bit floating-point number 
+20.	for	        Used to start a for loop
+21.	if	        Tests a true/false expression and branches accordingly
+22.	implements	Specifies that a class implements an interface 
+23.	import   	References other classes
+24.	instanceof	Indicates whether an object is an instance of a specific class or implements an interface 
+25.	int	        A data type that can hold a 32-bit signed integer 
+26.	interface	Declares an interface
+27.	long	        A data type that holds a 64-bit integer
+28.	native	        Specifies that a method is implemented with native (platform-specific) code 
+29.	new	        Creates new objects 
+30.	null	        Indicates that a reference does not refer to anything 
+31.	package	        Declares a Java package
+32.	private  	An access specifier indicating that a method or variable may be accessed only in the class it’s declared in
+33.	protected	An access specifier indicating that a method or variable may only be accessed in the class it’s declared in (or a subclass of the class it’s declared in or other classes in the same package)
+34.	public	        An access specifier used for classes, interfaces, methods, and variables indicating that an item is accessible throughout the application (or where the class that defines it is accessible)
+35.	return	        Sends control and possibly a return value back from a called method 
+36.	short	        A data type that can hold a 16-bit integer 
+37	static	        Indicates that a variable or method is a class method (rather than being limited to one particular object)
+38.	strictfp	A Java keyword is used to restrict the precision and rounding of floating-point calculations to ensure portability.
+39.	super	        Refers to a class’s base class (used in a method or class constructor) 
+40.	switch	        A statement that executes code based on a test value 
+41.	synchronized	Specifies critical sections or methods in multithreaded code
+42.	this	        Refers to the current object in a method or constructor 
+43.	throw 	        Creates an exception 
+44.	throws	        Indicates what exceptions may be thrown by a method 
+45.	transient	Specifies that a variable is not part of an object’s persistent state
+46.	try	        Starts a block of code that will be tested for exceptions 
+47.	void	        Specifies that a method does not have a return value
+48.	volatile	This indicates that a variable may change asynchronously
+49.	while	        Starts a while loop
+
+
+
+
+
+3. Literals
+Literals are variables whose values remain constant throughout the program. 
+They are also called Constants. 
+
+4. Operators
+An operator is a symbol that operates on one or more operands to produce a result.
+
+They will be discussed in greater detail in the next article.
+
+5. Separators
+Separators are symbols that indicate the division and arrangement of groups of code. The structure and function of code is generally defined by the separators. The separators used in Java are as follows:
+
+parentheses ( )
+Used to define precedence in expressions, to enclose parameters in method definitions, and enclosing cast types.
+braces { }
+Used to define a block of code and to hold the values of arrays.
+brackets [ ]
+Used to declare array types.
+semicolon ;
+Used to separate statements.
+comma ,
+Used to separate identifiers in a variable declaration and in the for statement.
+period .
+Used to separate package names from classes and subclasses and to separate a variable or
+ a method from a reference variable.
+--------------------------------------------------------------------------------------------------
+
+
+class Demo3 {
+  public static void main(String args[]) {
+   int num=10; // We have declared the variable num which is of type int and we initialised it with the value 10
+  System.out.println(num);
+ }
+}
+
+
+int NUM; but this not same as
+int num;
+
+
+-----------------------------------------------------------------------------------------------------------
+// StudentDetails contain two words. In the classname if we have multiple words. Every word
+// starts with uppercase. So in StudentDetails. S(uppercase)tudentD(uppercase)etails
+class StudentDetails{
+   public static void main(String args[]){
+     int roll=1;
+     String name="Ashok";
+     int marks=100;
+     char grade='A';
+     System.out.println(roll);
+     System.out.println(name);
+     System.out.println(marks);
+     System.out.println(grade);
+    }
+  }
+/* The above code prints the variables only.  */
+-------------------------------------------------------------------------------------------------------------
+class StudentDetails2{
+   public static void main(String args[]){
+     int roll=1;
+     String name="Ashok";
+     int marks=100;
+     char grade='A';
+     System.out.println("ROLL:"+roll);
+     System.out.println("NAME: "+name);
+     System.out.println("MARKS: "+marks);
+     System.out.println("GRADE: "+grade);
+    }
+  }
+/* The above code prints the variables along with some labels  */
+-------------------------------------------------------------------------------------------------
+class StudentDetails3{
+   public static void main(String args[]){
+     int roll=1;
+     String name="Ashok";
+     int marks=100;
+     char grade='A';
+     System.out.println("roll");
+     System.out.println("name");
+     System.out.println("marks");
+     System.out.println("grade");
+    }
+  }
+/* common mistake in the initial days of learning as keeping the variable name within quotes. It wont display
+   the value within the variable. Dont keep variable name within quotes */
+------------------------------------------------------------------------------------------------------
+
+
+
+class CommentDemo {
+public static void main(String args[]) {
+	/*
+	  Given below is a variable age 
+      and a print statement to print age
+	 */
+	int age = 25;
+	System.out.println(age);
+}
+}
+--------------------------------------------------------------------------------------------------------------
+class OperatorDemo1 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   num++; // num=num+1;
+   // post increment
+   System.out.println(num); //11
+  }
+}
+---------------------------------------------------------------------------------------------------------------
+class OperatorDemo2 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   ++num; // num=num+1;
+   // pre increment
+   System.out.println(num); //11
+  }
+}
+-----------------------------------------------------------------------------------------------------------
+class OperatorDemo3 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   int num2=num++; // num2=num; num=num+1;
+   // as it is post increment, so the value of num is first assigned to num2 and then it is incremented  
+   System.out.println(num2); //10
+   System.out.println(num);  //11
+  }
+}
+---------------------------------------------------------------------------------------------------------
+class OperatorDemo4 {
+  public static void main(String args[]) {
+ 
+   int num=10;
+   System.out.println(num); //10
+   int num2=++num; //  num=num+1; num2=num;
+   // as it is post increment, so the value of num is first assigned to num2 and then it is incremented  
+   System.out.println(num2); //11
+   System.out.println(num);  //11
+  }
+}
+----------------------------------------------------------------------------------------------------
+class OperatorDemo5 {
+  public static void main(String args[]) {
+    boolean b1=false;
+    boolean b2=true;
+    System.out.println(b1); // false
+    System.out.println(!b1); // true
+    System.out.println(b2); // true
+    System.out.println(!b2); //false
+  }
+}
+-----------------------------------------------------------------------------------------------------
+
+class OperatorDemo6{
+public static void main(String args[]) {
+	int numOne = 10;
+	int numTwo = 5;
+	System.out.println(numOne + numTwo); //Output will be 15
+	System.out.println(numOne - numTwo); //Output will be 5
+	System.out.println(numOne * numTwo); //Output will be 50
+	System.out.println(numOne / numTwo); //Output will be 2
+	System.out.println(numOne % numTwo); //Output will be 0
+}
+}
+
+-----------------------------------------------------------------------------------------------------
+class OperatorDemo7 {
+   public static void main(String args[]) {
+   int num1=1;   // = is assignment operator
+   int num2=2;
+   System.out.println(num1==num2); // == is comparison operator  false
+   System.out.println(num1>num2);  // false
+   System.out.println(num1!=num2); // true
+   System.out.println(num1<num2);  // true
+   System.out.println(num1>=num2); // false
+   System.out.println(num1<=num2); //  true 
+   }
+ } 
+-----------------------------------------------------------------------------------------------------------
+class OperatorDemo8 {
+   public static void main(String args[]) {
+   int num1=1;
+   int num2=2;
+   int num3=3;
+   System.out.println(num2>num1 && num3>num2);   // true
+   System.out.println(num2>num1 || num3>num2);  // true
+   System.out.println(num1>num2  && num3>num2);  // false && true===> false
+   System.out.println(num1>num2  || num3>num2); //  false || true ===> true
+   System.out.println(num1>num2  && num2>num3);  // false && false==> false
+   System.out.println(num1>num2  || num2>num3);  // false || false ===> false
+  }
+ } 
+---------------------------------------------------------------------------------------------------------------
+
+class OperatorDemo9{
+
+public static void main(String args[]) {
+	int numOne = 10;
+	int numTwo = 5;
+	int min = (numOne < numTwo) ? numOne : numTwo;
+	System.out.println(min); //Output will be 5
+}
+}
+-------------------------------------------------------------------------------------------------------------
+class Operator10{
+
+public static void main(String args[]) {
+	int numOne = 10; //The value 10 is assigned to numOne
+	System.out.println(numOne); //Output will be 10
+	numOne += 5;  // numOne=numOne+5;
+	System.out.println(numOne); //Output will be 15
+	numOne -= 5;   // numOne=numOne-5;
+	System.out.println(numOne); //Output will be 10
+	numOne *= 5;   // numOne=numOne*5;
+	System.out.println(numOne); //Output will be 50
+	numOne /= 5;   // numOne=numOne/5;
+	System.out.println(numOne); //Output will be 10
+}
+}
+
+
+2+2*5
+2+10
+12
+---------------------------------------------------------------------------------------------------------
+if(logical_expression) {}
+  int num1=10;
+  int num2=20;
+  if(num1==num2) {}
+  if(num1>num2)  {}
+  String customerType="Regular";
+  if(customerType=="Regular") {}
+
+ if(num1=num2) {}
+// Here in the above statement we are assigning num1 with the value num2. Which means num1 gets a value
+  as 20.
+
+ if(20){}  ===> work in C as in C non zero value is considered as something true.
+
+class IfDemo1 {
+  public static void main(String args[]) {
+      int num1=10;
+      int num2=20;
+      // if(num1==num2) {}
+     if(num1=num2) //Type mismatch: cannot convert from int to boolean
+     { 
+     System.out.println("Both are equal");
+     } // end of if
+   } // end of main
+ }  // end of class
+----------------------------------------------------------------------------------------------------
+public class Customer1 {
+	public static void main(String[] args) {
+		String customerType = "Regular";
+		int quantity = 2;
+		int unitPrice = 10;
+		int totalCost = 0;
+		int discount = 5;
+		int deliveryCharge = 5;
+		totalCost = unitPrice * quantity;
+		if (customerType == "Regular") {
+			totalCost = totalCost - (totalCost * discount / 100);
+			System.out.println("You are a regular customer and eligible for 5% discount");
+		} else {
+			totalCost = totalCost + deliveryCharge;
+			System.out.println("You need to pay an additional delivery charge of $5");
+		}
+		System.out.println("Total cost: " + totalCost);
+	}
+}
+-----------------------------------------------------------------------------------------------
+
+public class Customer2 {
+	public static void main(String[] args) {
+		String customerType = "Regular";
+		int quantity = 3;
+		int unitPrice = 10;
+		int discount = 5;
+		int deliveryCharge = 5;
+		int totalCost = unitPrice * quantity;
+		if (customerType == "Regular") {
+			totalCost = totalCost - (totalCost * discount / 100);
+			System.out.println("You are a regular customer and eligible for 5% discount");
+			System.out.println("The total cost to be paid is " + totalCost);
+		} else if (customerType == "Guest") {
+			totalCost = totalCost + deliveryCharge;
+			System.out.println("You need to pay an additional delivery charge of $5");
+			System.out.println("The total cost to be paid is" + totalCost);
+		} else // If there is only one statement inside a block, {} is optional
+			System.out.println("Invalid customer type");
+	}
+}
+-------------------------------------------------------------------------------------------------------
+Depending on the requirement we can have:
+
+*   if(condition) {}
+*   if(condition) {} else {}
+*   if(condition) {} else if(condition) {}
+*   if(condition) {} else if(condition) {} else {}
+*   if(condition) {} else if(condition) else if(condition) {} else {}
+*   if(condition) {} else if(condition) else if(condition) {}
+---------------------------------------------------------------------------------------------------
+
+class Tester {
+	public static void main(String[] args) {
+		int marks = 90;
+
+		if (marks < 50) {
+			System.out.println("Fail");
+		} else if (marks >= 50 && marks < 60) {
+			System.out.println("D grade");
+		} else if (marks >= 60 && marks < 70) {
+			System.out.println("C grade");
+		} else if (marks >= 70 && marks < 80) {
+			System.out.println("B grade");
+		} else if (marks >= 80 && marks < 90) {
+			System.out.println("A grade");
+		} else if (marks >= 90 && marks <= 100) {
+			System.out.println("A+ grade");
+		} else {
+			System.out.println("Invalid!");
+		}
+	}
+}
+--------------------------------------------------------------------------------------------------------------
+
+public class Customer3 {
+	public static void main(String[] args) {
+		String customerType = "Guest";
+		int quantity = 2;
+		int unitPrice = 10;
+		int totalCost = 0;
+		int discount = 5;
+		int deliveryCharge = 5;
+		totalCost = (unitPrice * quantity);
+		if (customerType == "Regular") {
+			totalCost = totalCost - (totalCost * discount / 100);
+			System.out.println("You are a regular customer and have got 5% discount");
+			System.out.println("The total cost to be paid is " + totalCost);
+			if (totalCost >= 20) {
+				System.out.println("You have got a gift voucher!!!!");
+			}
+		} else if (customerType == "Guest") {
+			totalCost = totalCost + deliveryCharge;
+			System.out.println("You need to pay an additional delivery charge of $5");
+			System.out.println("The total cost to be paid is " + totalCost);
+		} else {
+			System.out.println("Invalid selection");
+		}
+	}
+}
+-----------------------------------
+
+public class Customer4 {
+	public static void main(String[] args) {
+		String orderedFood = "Pizza";
+		switch (orderedFood) {
+		case "Burger":
+			System.out.println("You have ordered Burger. Unit price: $10");
+			break;
+		case "Pizza":
+			System.out.println("You have ordered Pizza. Unit price: $15");
+			break;
+		case "Sandwich":
+			System.out.println("You have ordered Sandwich. Unit price: $8");
+			break;
+		default:
+			System.out.println("Invalid selection");
+		}
+	}
+}
+-------------------------------
+public class Customer5 {
+	public static void main(String[] args) {
+		String orderedFood = "Pizza";
+		switch (orderedFood) {
+		case "Burger":
+			System.out.println("You have ordered Burger. Unit price: $10");
+			break;
+		case "Pizza":
+			System.out.println("You have ordered Pizza. Unit price: $15");
+			
+		case "Sandwich":
+			System.out.println("You have ordered Sandwich. Unit price: $8");
+			
+		default:
+			System.out.println("Invalid selection");
+		}
+	}
+}
+[In the above code after showing the You have ordered Pizza. Unit price: $15, it will display
+You have ordered Sandwich. Unit price: $8
+Invalid selection
+As we missed writing break in the case for Pizza and Sandwich. break takes the control out of the 
+switch construct. ]
+------------------------------------------------------------------------------------------
+Q In switch case expression what are the datatypes allowed?
+A) char,byte,short,int,String,enum.
+
+    class SwitchDemo1 {
+     public static void main(String args[]) {
+      long ch=1;
+      switch(ch){
+      case 1 : System.out.println("1");
+               break;
+      case 2 : System.out.println("2");
+               break;
+      default : System.out.println("The option is incorrect!!!");
+               
+      }
+   }
+ }
+[Note: Above code will show compilation error as the switch case expression is having a datatype  
+ as long. But long datatype is not allowed.]
+-----------------------------------------------------------------------------------------------------
+Q Is it necessary to write default at the end of switch block?
+A No. We can write default at the begining or in between the cases.
+
+ class SwitchDemo2 {
+     public static void main(String args[]) {
+      int ch=1;
+      switch(ch){
+       default : System.out.println("The option is incorrect!!!");
+               break;
+      case 1 : System.out.println("1");
+               break;
+      case 2 : System.out.println("2");
+            
+     
+               
+      }
+   }
+ }
+[With the last condition [ default or case we don't require any break . As in the above
+example with case 2 we dont have any break statement.]
+--------------------------------------------------------------------------------------------------------
+* Iterations/loops
+  ** intialisation of some variable which will decide whether to enter the loop or not.
+  ** condition check which decides to enter the loop initially and latter whether to be within the
+     loop or to move out of the loop 
+  ** Reinitialisation of the variable so that the value of the variable changes and whose
+     changed value will decide whether to remain within the loop or to move out of the loop. 
+-----------------------------------------------------------------------------------------------
+  class WhileLoopDemo1 {
+      public static void main(String []str){
+        int ctr=0;  //intialisation of some variable which will decide whether to enter the loop or not.
+       while(ctr<10) //condition check which decides to enter the loop initially and latter whether                        //to be within the loop or to move out of the loop 
+         {
+         System.out.println(ctr);
+         ctr++;  //Reinitialisation of the variable so that the value of the variable changes and          whose changed value will decide whether to remain within the loop or to move out of the loop.
+     
+         }
+         System.out.println("Out of the loop");
+     }
+  } 
+
+---------------------------------------------------------------------------------------------
+ entry-controlled loop.  
+class WhileLoopDemo2 {
+   public static void main(String []str){
+  int ctr=10;
+  while(ctr<10){
+    System.out.println(ctr);
+    ctr++;
+   }
+
+ }
+} 
+[No output will be shown ]
+----------------------------------------------------------------------------------
+
+import java.util.Scanner;  
+
+public class UserInputDemo1 {
+   public static void main(String args[]) {
+    Scanner scanner=new Scanner(System.in); //Scanner is a predefined class
+    // and we are creating an object of scanner class by writing new Scanner(System.in)
+    // and that object's reference is stored in the reference variable scanner
+   // Scanner scan=new Scanner(System.in); // in is an object of InputStream which is with System class
+   // In c programming int *ptr; int num=10; ptr=&num;  
+    int num;
+    String name;
+    float score;
+    System.out.println("Enter the number");
+    num=scanner.nextInt();
+    System.out/println("Enter the name");
+    name=scanner.next();  // For String
+    System.out.println("Enter the score");
+    score=scanner.nextFloat();
+    System.out.println("The value of num is: "+num);
+    System.out.println("The value of name is: "+name);
+    System.out.println("The value of score is: "+score);
+   }
+ }
+
+ ----------------------------------------------------------  
+import java.util.Scanner;  
+public class UserInputDemo2 {
+   public static void main(String args[]) {
+    Scanner scanner=new Scanner(System.in); 
+    String name;
+    System.out.println("Enter the name");
+    name=scanner.nextLine();
+    // nextLine can accept a string with spaces in between which cannot 
+    // be done with next() method
+    System.out.println("The value of name is: "+name);
+   
+   }
+ }
+---------------------------------------------------------------------------------
+// Enter number from user and keep on adding those number till user enters any positive 
+// number
+
+import java.util.Scanner;  
+public class WhileDemo3 {
+   public static void main(String args[]) {
+    Scanner scanner=new Scanner(System.in); 
+    int num=1,sum=0;
+    while(num>0)
+      {    
+    System.out.println("Enter the number");
+    num=scanner.nextInt();
+    //sum=sum+num;
+      sum+=num;
+     }
+    System.out.println(sum);
+  }
+}
+------------------------------------------------------------------------------------------------------------------------------------
+//exit-controlled loop.  
+public class DoWhileDemo1 {
+  public static void main(String args[]) {
+       int i=0;
+      do{
+       System.out.println(i);
+       i++; 
+      }while(i<10);   
+  }
+}
+
+-------------------------------------------------------------------------------------------------------------------
+// In do while loop , if the condition is false , then also it is 
+// executed once but in case of while loop as it is entry contolled loop,
+// if the condition is false and as it is checked during the entry of the loop,
+// the loop is not executed.
+public class DoWhileDemo2 {
+  public static void main(String args[]) {
+       int i=11;
+      do{
+       System.out.println(i);
+       i++; 
+      }while(i<10);   
+  }
+}
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+public class ForLoop1 {
+    public static void main(String args[]) {
+    for(int i=0;i<10;i++) {
+     System.out.println(i);
+    }
+  }
+ }
+
+
+
+public class ForLoop2 {
+    public static void main(String args[]) {
+    for(int i=10;i<10;i++) {
+     System.out.println(i);
+    }
+  }
+ }
+
+
+1
+12
+123
+1234
+12345
+/*
+   row    col
+    1      1            1
+    2      12           1 2
+    3      123          1 2 3
+
+*/
+
+
+public class NestedLoop  {
+    public static void main(String args[]) {
+    for(int row=1;row<=5;row++)
+     {
+     for(int col=1;col<=row;col++)
+        {
+           System.out.println(row);
+        }
+     }
+   }
+}
+
+// Let use continue the loop till user enters 0
+
+import java.util.Scanner;
+public class BreakWithLoop {
+    public static void main(String args[]) {
+    int num;
+    int sum=0;
+    Scanner scanner=new Scanner(System.in);
+    System.out.println("Enter the number");
+    while(true) {
+     System.out.println("Enter the number");
+     num=scanner.nextInt();
+     if(num==0){
+      break;
+     }
+      sum+=num;
+    }
+    System.out.println(sum);
+   }
+ }
+
+------------------------------------------------------------------------------------
+Enter 10 numbers from user and count the number of even numbers
+
+import java.util.Scanner;
+public class ContinueWithLoop {
+    public static void main(String args[]) {
+    int num;
+    int count=0;
+    Scanner scanner=new Scanner(System.in);
+    for(int i=0;i<10;i++) {
+    System.out.println("Enter the number");
+    num=scanner.nextInt();
+    if(num%2==0)
+    {
+     count++;
+    }
+    else{
+          continue;
+        } 
+     System.out.println("This is the "+count);
+   } // end of for
+    System.out.println("Total number of even numbers "+count);
+ }   // end of main
+}   // end of class
+
+--------------------------------------------------------------------------------------------------------------
+
+class Customer{
+   public static void main(String[] args){
+    int id;
+    String name;
+    String address;
+    String foodOrdered;  
+    id=1;
+    name="Rohit";
+    address="A/122 Radha Nagar, Delhi";
+    foodOrdered="Pizza";
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+    System.out.println(foodOrdered);
+   }
+ }
+--------------------------------------------------------------------------------------
+class Customer{
+   public static void main(String[] args){
+    // id,name,address are local variable to the main method. 
+    int id=1;
+    String name="Rohit";
+    String address="A/122 Radha Nagar, Delhi";
+    String foodOrdered="Pizza";
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+    System.out.println(foodOrdered);
+   }
+ }
+
+---------------------------------------------------------------------------------------
+class is a blueprint and object brings class into usage. 
+We have primitive data type but we cannot work with the datatype until unless we create a variable.
+ int num; // int is a datatype and num is variable
+class Customer {}
+ 1. Customer cust=new Customer();
+Customer cust=65430;
+
+// new Customer() in RHS is actually creating a new object during the runtime and the address
+// of the newly created object is stored in the reference variable cust. 
+----------------------------------------------------------------------------------------
+class CustomerDetails{
+// id, name,address,foodOrdered are instance variables, member variables, attributes of Customer //class. To access these attributes we require the objectname.attributename.
+    int id;
+    String name;
+    String address;
+    String foodOrdered;
+
+    public static void main(String args[]) {
+     CustomerDetails customer=new CustomerDetails();
+     CustomerDetails customer2=new CustomerDetails();
+     customer.id=1;
+     customer.name="Ravi";
+     customer.address="A/15 Netaji Nagar, Kolkata";
+     customer.foodOrdered="sweets";
+     customer2.id=2;
+     customer2.name="Suresh";
+     customer2.address="54/1 Marine Drive,Mumbai";
+     customer2.foodOrdered="Pizza";
+     System.out.println(customer.id);
+     System.out.println(customer.name);
+     System.out.println(customer.address);
+     System.out.println(customer.foodOrdered);
+     System.out.println(customer2.id);
+     System.out.println(customer2.name);
+     System.out.println(customer2.address);
+     System.out.println(customer2.foodOrdered);
+     
+    }
+  }
+------------------------------------------------------------------------------------------
+
+class CustomerDetails2{
+// id, name,address,foodOrdered are instance variables, member variables, attributes of Customer //class. To access these attributes we require the objectname.attributename.
+    int id;
+    String name;
+    String address;
+    String foodOrdered;
+    
+   // setData, dispData, main
+    void setData(){
+     id=1;
+     name="Akash";
+     address="Delhi";
+     foodOrdered="Pizza";
+    }
+
+    void dispData(){
+     System.out.println(id);
+     System.out.println(name);
+     System.out.println(address);
+     System.out.println(foodOrdered);
+    }    
+
+    public static void main(String args[]) {
+     CustomerDetails2 customer=new CustomerDetails2();
+     customer.setData();
+     customer.dispData();
+       
+    }
+  }
+
+-------------------------------------------------------------------------------------------
+
+
+   if(i>10)
+      System.out.println("i is larger than 10");
+   else
+     System.out.println("i is smaller than 10");
+--------------------------------------------------------
+if(i>10){
+      System.out.println("i is larger than 10");
+     } 
+  else{
+     System.out.println("i is smaller than 10");
+      }
+-------------------------------------------------------------------
+// The below code will show compilation error
+if(i>10){
+      System.out.println("i is larger than 10");
+     
+  else{
+     System.out.println("i is smaller than 10");
+      }
+----------------------------------------------------------------------------------------------
+class Customer {
+// id,name and address are the instance variables of the Customer class
+// or member variables
+     int id;
+     String name;
+     String address;
+
+  
+    public static void main(String args[]) {
+// To access the member variables of a class, we need to create the object first and then
+// we try to access the members with the help of dot(.) operator
+    Customer customer=new Customer();
+  // new Customer() is creating a new object and the address of the newly create object is
+  // stored in the reference variable customer.
+  // Scanner input=new Scanner(System.in);
+  // input is a reference variable which is holding/storing the address of the newly created
+  // object of Scanner class.(new Scanner(System.in))  
+  // If we have Employee class and we need to create the object, what
+  // is the syntax of doing that?
+  // Employee emp=new Employee();
+  // Customer customer;  We are declaring a reference variable of Customer type
+  // customer=new Customer(); // We created an object of Customer class and stored the 
+  // address of newly created object in the reference variable customer.;
+     customer.id=1;
+     customer.name="Rajesh";
+     customer.address="6/1 Jawahar Road, Kolkata";
+     System.out.println(customer.id);
+     System.out.println(customer.name);
+     System.out.println(customer.address);
+
+    }
+ }
+    
+---------------------------------------------------------------------------------------
+// local variables are the variables declared within a method
+// instance variables are declared within a class
+class Customer2 {
+     int id;
+     String name;
+     String address;
+  public static void main(String args[]) {
+    Customer2 customer1=new Customer2();
+    Customer2 customer2=new Customer2();
+    int id=3; // local variables(id,name and address) to the main
+    // method are local to the main method and they have
+    // any relationship with the id,name and address of Customer
+    // class 
+    String name="Nitin" 
+    String address="Mumbai";
+    customer1.id=1;
+    customer1.name="Rajesh";
+    customer1.address="6/1 Jawahar Road, Kolkata";
+    customer2.id=2;
+    customer2.name="Sudha";
+    customer2.address="A/1 Netaji Nagar, Kolkata";
+    customer2.id=2;
+    System.out.println(customer1.id);
+    System.out.println(customer1.name);
+    System.out.println(customer1.address);
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+    System.out.println(customer1.id);
+    System.out.println(customer1.name);
+    System.out.println(customer1.address);  
+    System.out.println(customer2.id);
+    System.out.println(customer2.name);
+    System.out.println(customer2.address);  
+
+    }
+ }
+    // Let us make the code more modular by creating some more methods apart
+   // from the main method
+class Customer3 {
+     int id;
+     String name;
+     String address;
+
+  // setData and dispData are two member methods
+  // setData is to store the data
+  // dispData is to display data
+   void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+    
+   }
+
+   void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+
+  public static void main(String args[]) {
+     Customer3 customer=new Customer3();
+    // In this approach we are not directly accessing the member variables
+    // though we have a liberty of doing so.
+    // The below code will also work. 
+       customer.id=0;
+       System.out.println(customer.id); //0
+       customer.setData();
+       customer.dispData();
+    }
+ }
+
+
+class Customer3b {
+     int id;
+     String name;
+     String address;
+
+  // setData and dispData are two member methods
+  // setData is to store the data
+  // dispData is to display data
+  /* void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+    
+   } */
+
+   void setData(int id1, String name2, String address2)
+  {
+     id=id1;
+     name=name2;
+     address=address2;     
+  }
+
+   void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+
+  public static void main(String args[]) {
+     Customer3b customer1=new Customer3b();
+     Customer3b customer2=new Customer3b(); 
+       
+      
+       customer1.setData(1,"Ram","A/32 Indira Colony Delhi");
+       customer1.dispData();
+       customer2.setData(2,"Ratan","22/2 Delhi");
+       customer2.dispData();
+    }
+ }
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+Q What are access specifier in Object Oriented Language like java?
+A access specifier decides the accessibility of class, member variable and methods from 
+  other classes within the same package or different package. Currently we have not discussed
+  much about packages and we are working with the default package.
+
+  class Data{}  // The Data class is in the default package.
+----------------------------------------------------------------------------------------
+  package com.infosys;
+
+  class Data{}
+
+// In the current example Data class is withing the package infosys. infosys is a subpackage of 
+   com.  
+----------------------------------------------------------------------------------------------
+In Customer3 code all the member variables and methods were having the access specifier as
+default and we can observe that main method is public so that they can be easily accessed outside
+the class and the package. 
+-------------------------------------------------------------------------------------------
+What will happen if we declare all the members as public?
+A public members can be accessed from anywhere. Anywhere means outside the class and even outside
+the package declaration.
+
+
+class Customer4 {
+     public int id;
+     public String name;
+     public String address;
+
+   public void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   public void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+
+  public static void main(String args[]) {
+     Customer4 customer=new Customer4();
+    // In this approach we are not directly accessing the member variables
+    // though we have a liberty of doing so.
+    // The below code will also work. 
+       customer.id=0;
+       System.out.println(customer.id); //0
+       customer.setData();
+       customer.dispData();
+    }
+ }
+-------------------------------------------------------------------------------------------
+What about declaring the members as private?
+A private members can be accessed in the same class and can't be accessed outside the class
+where they are defined.
+
+class Customer5 {
+     private int id;
+     private String name;
+     private String address;
+
+   private void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   private void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+
+  public static void main(String args[]) {
+     Customer5 customer=new Customer5();
+    // In this approach we are not directly accessing the member variables
+    // though we have a liberty of doing so.
+    // The below code will also work. 
+       customer.id=0;
+       System.out.println(customer.id); //0
+       customer.setData();
+       customer.dispData();
+    }
+ }
+---------------------------------------------------------------------------------
+So can we have multiple classes for the above approach?
+A Yes we can have. 
+
+
+class Customer6 {
+     private int id;
+     private String name;
+     private String address;
+
+   private void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   private void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+}
+
+ class CustomerMain6{
+  
+  public static void main(String args[]) {
+     Customer6 customer=new Customer6();
+   
+       customer.id=0;
+       System.out.println(customer.id); 
+       customer.setData();
+       customer.dispData();
+    }
+ }
+-----------------------------------------
+In the above approach we kept both the classes in the same file. We are getting error in the
+above code as we are trying to access private members of class Customer6 from another class
+called CustomerMain6. 
+Is it possible to have two separate files for storing two different classes?
+A Yes. Let us plan for the files Customer7.java and CustomerMain7.java.
+ 
+ // Customer7.java 
+
+class Customer7 {
+     private int id;
+     private String name;
+     private String address;
+
+   private void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   private void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+}
+
+// CustomerMain7.java 
+
+class CustomerMain7{
+  // id and setData and dispDAta
+	// are the private members of Customer class
+	// that is reason they are not accessible
+	// from main method which is in a different class
+	// called CustomerMain7
+  public static void main(String args[]) {
+     Customer7 customer=new Customer7();
+   
+       customer.id=0;
+       System.out.println(customer.id); 
+       customer.setData();
+       customer.dispData();
+    }
+ }
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+ // Customer8.java 
+
+class Customer8 {
+     private int id;
+     private String name;
+     private String address;
+
+   void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+}
+
+// CustomerMain8.java 
+
+class CustomerMain8{
+  // id and setData and dispDAta
+	// are the private members of Customer class
+	// that is reason they are not accessible
+	// from main method which is in a different class
+	// called CustomerMain7
+  public static void main(String args[]) {
+     Customer8 customer=new Customer8();
+   // The id cannot be accessed
+     // as it is private to the Customer class
+     /*  customer.id=0;
+       System.out.println(customer.id); */
+       customer.setData();
+       customer.dispData();
+    }
+ }
+--------------------------------------------------------
+What will happen if we make setData and dispData as with access specifier?
+A These are again accessible outside the class class. 
+
+-----------------------------------------------------------------
+What is difference between the access as default and public?
+A No difference until unless we work in different packages. Currently we are not working with the codes where the classes are in different package.
+Current the classes are in the same package so the effect of writing the members as default and public will be same.
+
+
+// Customer9.java 
+
+class Customer9 {
+     private int id;
+     private String name;
+     private String address;
+
+   public void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   public void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+}
+
+// CustomerMain9.java 
+
+class CustomerMain9{
+  
+  public static void main(String args[]) {
+     Customer9 customer=new Customer9();
+       customer.setData();
+       customer.dispData();
+    }
+ }
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Customer9b.java 
+
+class Customer9b {
+     private int id;
+     private String name;
+     private String address;
+
+   public void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   public void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+}
+
+// CustomerMain9b.java 
+
+class CustomerMain9b{
+  
+  public static void main(String args[]) {
+     Customer9b customer=new Customer9b();
+       customer.setData();
+       customer.dispData();
+    }
+ }
+
+-----------------------------------------------------------------------
+public access specifier with class decides whether the class can be accessed outside the package. Currently we are not using multiple packages and
+even we are not creating any package. As currently we are working in the default package.
+
+
+
+// Customer10.java 
+
+public class Customer10 {
+     private int id;
+     private String name;
+     private String address;
+
+   public void setData(){
+     id=1;
+     name="Akash";
+     address="A/122 Alam Nagar Lucknow";
+   }
+
+   public void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+}
+
+// CustomerMain10.java 
+
+public class CustomerMain10{
+  
+  public static void main(String args[]) {
+     Customer10 customer=new Customer10();
+       customer.setData();
+       customer.dispData();
+    }
+ }
+
+WE ARE FROM NOW FOLLOW THE APPROACH SIMILAR TO THE ABOVE EXAMPLE OF Customer10 AND CustomerMain10.
+* Let us have classes as public.
+* member or instance variables as private.
+* methods as public.
+* main will be public.
+-----------------------------------------------------------------------------------------------------------------------------------------
+When we are declaring a class as public , class name and file name should be same. 
+If we are having the class with default/package specifier , it is not essential to keep the class name and file name same. Example suppose the class is not 
+public in that case we can have the following way of creating a class.
+
+Suppose the file name is Hi.java and it contains
+
+  class Hello {
+   public static void main(String args[]) {
+    System.out.println("Hello Friends!!!");
+   }
+  }
+
+Now if we declare the class as public in that case it is mandatory to keep the class and the file name same.
+
+public class Hello {
+   public static void main(String args[]) {
+    
+   }
+ }
+
+In the above case, we have to keep the file name as Hello.java otherwise it will show compilation error.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ // Customer11.java 
+
+public class Customer11 {
+     private int id;
+     private String name;
+     private String address;
+//  id1, name1 and address1 are parameters and local variables to the setData method.
+// We cannot access them in any other method of Customer11
+   public void setData(int id1, String name1, String address1){
+     id=id1;
+     name=name1;
+     address=address1;
+   }
+
+   public void dispData(){
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+   }
+}
+
+// CustomerMain11.java 
+
+public class CustomerMain11{
+  
+  public static void main(String args[]) {
+     Customer11 customer1=new Customer11();
+     Customer11 customer2=new Customer11();
+       customer1.setData(1,"Suresh","Chennai");  // method call
+       customer1.dispData();
+       customer2.setData(2,"Naresh","Hyderabad");
+       customer2.dispData();
+    }
+ }
+
+------------------------------------------------------------
+
+public class Calculator {
+private int num1;
+private int num2;
+private int result;
+// Here the return type is void and
+// method with parameters and
+// parameters are having datatype as int
+public void setData(int n1, int n2)
+{
+	num1=n1;
+	num2=n2;
+}
+// Here the return type is void and
+// method is not passed with any parameter
+/* public void add()
+{
+	result=num1+num2;
+	System.out.println(result);
+}*/
+
+
+public int add()
+{
+	result=num1+num2;
+	return result;
+}
+
+}
+
+
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+		Calculator calc=new Calculator();
+		calc.setData(1, 2);
+		// result is a local variable to main method
+		// and it is not same as that in the result
+		// class, there it is one of the instance
+		// variable
+		int result=calc.add();
+        System.out.println(result);
+        System.out.println(calc.add());
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// As we decided that result is not used by any other method so let use declare it 
+// within the add method.
+
+public class Calculator2 {
+private int num1;
+private int num2;
+
+public void setData(int n1, int n2)
+{
+	num1=n1;
+	num2=n2;
+}
+
+
+public int add()
+{
+       // Result here is a local variable and it cannot be accessed by any other method of the Calculator2
+      // class
+	int result=num1+num2;
+	return result;
+}
+
+}
+
+
+
+public class CalculatorMain2 {
+
+	public static void main(String[] args) {
+		Calculator2 calc=new Calculator2();
+		calc.setData(1, 2);
+                // The below result declaration is local to the main method and it is not the same local variable in add method of the Calculator2 class.
+		int result=calc.add();
+                System.out.println(result);
+                System.out.println(calc.add());
+	}
+
+}
+-------------------------------------------------------------------------------------------------
+Pass a number to a method and display the output as starting from 1 to that number.
+Enter the number
+5
+1
+2
+3
+4
+5
+   public class DisplayNumbers {
+
+        public void dispValues(int num){
+        for(int i=1;i<=num;i++){
+           System.out.println(i);
+         }
+      }
+   }
+
+   public class DisplayNumbersMain{
+      public static void main(String args[]) {
+      DisplayNumbers dn=new DisplayNumbers();
+      dn.dispValues(10);
+      System.out.println("-----End---------");
+     }
+   }
+ 
+
+----------------------------------------------
+
+Enter a number from user and display the sum of numbers from 1 to till that number.
+
+
+
+public class AddNumbers {
+
+   private int sum;
+
+        public int addValues(int num){
+
+        for(int i=1;i<=num;i++){
+             sum+=i;
+         }
+         return sum;
+      }
+   }
+
+ import java.util.Scanner;
+
+public class AddNumbersMain{
+      public static void main(String args[]) {
+      AddNumbers an=new AddNumbers();
+      Scanner scan=new Scanner(System.in);
+      System.out.println("Enter the number till which we have to add");	
+      int num=scan.nextInt();
+      int res=an.addValues(num);
+      System.out.println("The sum as: "+res);
+     }
+   }
+-----------------------------------------------------------------------------------------------------
+public class Number {
+    private int num;
+    private boolean isEven;
+     public boolean isEvenMethod(){
+         if(num%2==0)
+         {
+        	isEven=true; 
+         }
+        // If we are not writing isEven with else as false, 
+        // than also it will work because the default value
+         // in boolean variable is false
+         else
+         {
+        	 isEven=false;
+         }
+    	 return isEven;
+     }
+     public void setNumber(int n){
+       num=n;
+      }
+  }
+import java.util.Scanner; 
+public class NumberMain {
+   public static void main(String args[]){
+    Scanner scan=new Scanner(System.in);
+    Number number=new Number();
+    System.out.println("Enter the number");
+    int num=scan.nextInt();
+    number.setNumber(num);
+   // System.out.println(number.isEvenMethod());
+   /* boolean b=number.isEvenMethod();
+    if(b) or if(b==true)or if(number.isEvenMethod()==true) or if(number.isEven())*/
+    if(number.isEvenMethod()) // if the condition is true if(true) {}
+    {
+    System.out.println("The number is even");	
+    }
+    else
+    {
+    	System.out.println("The number is odd");
+    }
+  }
+}  
+--------------------------------------------------------------------------------------------------  
+Q How the instance variables are initialised?
+A With the help of constructors. 
+
+Q What are constructors?
+A constructors are methods.
+B constructor is having the same name as that of the class name.
+C constructor don't have any return type.
+D Constructors are used to initialise instance variables and ultimately initialising the object.
+E Constructors can parameterless or parameterized. 
+F If we dont write a constructor in the code, by default constructor is pushed to the code
+  during the compilation of the code.
+G We dont need to explicitly call the constructor. 
+H If we are writing our own constructor, compiler wont provide the default constructor.
+// Let us see the point F.
+
+  public class Data {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+  public void setData(int n1, String name1, boolean b1, float f1){
+   num=n1; 
+   name=name1;
+   b=b1;
+   f=f1;
+ }
+}
+
+ public class DataMain {
+  public static void main(String args[]) {
+   Data data=new Data();
+   System.out.println("Before invoking the setData() method");
+   data.displayData(); //0 null false 0.0
+   System.out.println("Afer setData() method is called");
+   data.setData(1,"XYZ",true,12.23f);
+   data.displayData();
+  }
+}
+
+------------------------------------
+// Let us write a parameterless/default constructor.
+
+
+  public class Data2 {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  // The following is a parameterless constructor
+ // 
+  public Data2(){
+    num=100;
+    name="Tom";
+    b=true;
+    f=100.50f;
+  }
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+  public void setData(int n1, String name1, boolean b1, float f1){
+   num=n1; 
+   name=name1;
+   b=b1;
+   f=f1;
+ }
+}
+
+ public class DataMain2 {
+  public static void main(String args[]) {
+   Data2 data=new Data2();
+   System.out.println("Before invoking the setData() method");
+   data.displayData();
+   System.out.println("Afer setData() method is called");
+   data.setData(1,"XYZ",true,12.23f);
+   data.displayData();
+  }
+}
+-----------------------------------------------------------------------------------------
+ Q Is constructor enough to set the values?
+A No because constructors are called once during the object creation. What will happen if we 
+  want to change the value of an object. 
+  1 Employee emp=new Employee();
+  The object created in line one need to be set with a new set of values. can we write new Employee() 
+  once again. No because writing new Employee() is creating a new Object.
+  2. emp=new Employee();
+ So in line2 once again a new object is getting created which replaces the address of the object created in line1.
+So the constructor is just for one time initialisation of the members but if we want to change 
+the values during the further execution of the code, we need to have setData kind of method.
+
+-------------------------------------------------------------------------------------------------- 
+// Parameterized constructors
+
+ public class Data3 {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  // The following is a parameterized constructor
+ // Can we have the same name for the parameters as of the instance variables?
+ // Yes but we have work more.
+  public Data3(int n1, String name1, boolean b1, float f1){
+    num=n1;
+    name=name1;
+    b=b1;
+    f=f1;
+  }
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+  public void setData(int n1, String name1, boolean b1, float f1){
+   num=n1; 
+   name=name1;
+   b=b1;
+   f=f1;
+ }
+}
+
+ public class DataMain3 {
+  public static void main(String args[]) {
+   Data3 data=new Data3(1,"Umesh",true,23.45f);
+   System.out.println("Before invoking the setData() method");
+   data.displayData();
+   System.out.println("Afer setData() method is called");
+   data.setData(1,"XYZ",true,12.23f);
+   data.displayData();
+   data.setData(1, "ABC", true, 12.23f);
+   data.displayData();
+   data=new Data3(5,"Amandeep",false,34.56f);
+   // so the object which is created in line3 is not longer usable in the code
+   // as the address of the objected created in line3 is overwritten by the
+   // address of the object created in line11
+   Data3 data1=new Data3(6,"Nidhi",false,45.5f);
+   // If we dont want to replace the address by the newly created object then we 
+   // can take other reference variable instead of taking the reference variable
+   // which is already holding the address of another object
+  }
+}
+----------------------------------------------------------------------------------------------------
+
+boolean b=true;
+  if(b) {}
+  if(true) {}
+int num=10;
+ if(num) {} if(10) {} // This is incorrect the expression is of int type.
+
+boolean b=false;
+if(b) {
+System.out.println("True");
+}
+else
+{
+System.out.println("False");
+}
+
+boolean b=false;
+if(!b) {
+  System.out.println("True");
+}
+else
+{
+ System.out.println("False");
+}
+-------------------------------------------------------------------
+Q Can we have both the constructors ( parameterless and parameterized constructor) in the same class?
+A Yes.
+ public class Data4 {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  // The following is the parameterless constructor
+  public Data4(){
+   num=1;
+   name="INFOSYS";
+   b=true;
+   f=100.00f;
+  }
+
+  // The following is a parameterized constructor
+ // Can we have the same name for the parameters as of the instance variables?
+ // Yes but we have work more.
+  public Data4(int n1, String name1, boolean b1, float f1){
+    num=n1;
+    name=name1;
+    b=b1;
+    f=f1;
+  }
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+  public void setData(int n1, String name1, boolean b1, float f1){
+   num=n1; 
+   name=name1;
+   b=b1;
+   f=f1;
+ }
+}
+
+ public class DataMain4 {
+  public static void main(String args[]) {
+   Data4 data1=new Data4();
+   Data4 data2=new Data4(1,"Umesh",true,23.45f);
+   Data4 data3=new Data4(2,"Sunil",false,13.45f);
+   data1.displayData();
+   data2.displayData();
+   data3.displayData();
+   
+  }
+}
+-------------------------------------------------------------------------------------------
+
+class Customer12 {
+	public String customerId;
+	public String customerName;
+	public long contactNumber;
+	public String address;
+	public Customer12() {
+		System.out.println("Parameterless constructor called");
+	}
+	public Customer12(String cId, String cName, long contact, String add) {
+		System.out.println("Parameterized constructor called");
+		customerId = cId;
+		customerName = cName;
+		contactNumber = contact;
+		address = add;
+	}
+}
+
+public class Tester11 {
+	public static void main(String args[]) {
+		Customer12 customer1 = new Customer12("C103", "Jacob", 5648394590L,
+				"13th Street, New York");
+		Customer12 customer2 = new Customer12();
+	}
+}
+
+----------------------------------
+Q Can we have the parameter of a constructor and instance variable name same ?
+A yes but with a slight change in the code. 
+
+Q If I dont make a change what will happen?
+public class Data5 {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  //The assignment to variable num has no effect
+  public Data5(int num, String name, boolean b, float f){
+    num=num;
+    name=name;
+    b=b;
+    f=f;
+  }
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+
+}
+
+ public class DataMain5 {
+  public static void main(String args[]) {
+     Data5 data=new Data5(1,"Umesh",true,23.45f);
+     data.displayData();
+   
+   
+  }
+}
+---------------
+
+public class Data6 {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  //this is representing the current object
+  // writing this.num means num is an instance variable
+  // related to the current object.
+  public Data6(int num, String name, boolean b, float f){
+    this.num=num;
+    this.name=name;
+    this.b=b;
+    this.f=f;
+  }
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+
+}
+
+ public class DataMain6 {
+  public static void main(String args[]) {
+     Data6 data=new Data6(1,"Umesh",true,23.45f);
+     data.displayData();
+   
+   
+  }
+}
+----------------------------------------------------------------------------------------------------
+this is having one more use as of constructor chaining.
+public class Data7 {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  // The following is the parameterless constructor
+  public Data7(){
+  /* num=1;
+   name="INFOSYS";
+   b=true;
+   f=100.00f; */
+   this(1,"INFOSYS",true,100.00f);
+  }
+
+  public Data7(int num, String name, boolean b, float f){
+    this.num=num;
+    this.name=name;
+    this.b=b;
+    this.f=f;
+  }
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+  public void setData(int n1, String name1, boolean b1, float f1){
+   num=n1; 
+   name=name1;
+   b=b1;
+   f=f1;
+ }
+}
+
+ public class DataMain7 {
+  public static void main(String args[]) {
+   Data7 data1=new Data7();
+   Data7 data2=new Data7(1,"Umesh",true,23.45f);
+   Data7 data3=new Data7(2,"Sunil",false,13.45f);
+   data1.displayData();
+   data2.displayData();
+   data3.displayData();
+   
+  }
+}
+-----------------------
+1   Employee employee=new Employee();
+2   employee=new Employee();
+
+Q How many objects got created till line 2.  
+A Two objects got created. In line 1 , an object got created and in line 2 second object got
+  created but now the reference variable is not holding the address of the object which
+  got created in line 1. So the object which got created in line 1 is eligible for 
+  garbage collection ( It is a process of making the memory free from the object which is 
+  not refered by any reference variable with the code).
+
+1 Employee employee=new Employee();
+2 Employee employeeBackup=employee;
+3 employee=new Employee();
+4 System.out.println("Hello");
+Q How many objects got created till line 3.
+A 2 objects are getting created that is in line 1 and line3. In line2 new object is not getting
+  created but the address which employee reference variable is holding, that is being passed
+  to employeeBackup.
+Q How many objects are eligible for garbage collection ?
+A 0.  The object which got created in line 1 , backed up by the reference variable employeeBackup.
+      The employee is now holding the address of the newly created object in line2. 
+
+Employee emp1=new Employee();
+Employee emp2,emp3;
+emp2=emp3=emp1;
+
+
+1. public class CustomerMain {
+2.     public static void main(String str[]) {
+3.      Customer cust=new Customer();
+4      cust.setData();
+5.      cust.dispData();
+6.    }
+7. }
+
+In the above code scope of the main method is ending in line6. So the object is eligible for garbage
+collection after this. The object which got created in line 3 is eligible for garbage collection at line 7. 
+
+
+-------------------------------------------
+
+
+class Book {
+  private String id;
+  private String title;
+  private float price;
+
+  public void setData(Sting id, String title, float price){
+      this.id=id;
+      this.title=title;
+      this.price=price;
+  }
+
+  public void displayData() {
+   System.out.println(id);
+   System.out.println(title);
+   System.out.println(price);
+  }
+ }
+
+ class BookMain{
+   public static void main(String args[]) {
+     Book book=new Book();
+     book.setData("B0001","Java",600);
+     book.displayData();
+    }
+ }
+  
+-------------
+// For every attribute have a pair of methods , one for storing the value
+// another for accessing the value
+public class Book {
+  private String id;
+  private String title;
+  private float price;
+
+  public void setId(String id) {
+   this.id=id;
+  }
+ 
+  public String getId(){
+   return id;
+  }
+
+  public void setTitle(String title) {
+   this.title=title;
+  }
+
+  public String getTitle() {
+   return title;
+  }
+ 
+ public void setPrice(float price) {
+   this.price=price;
+ }
+
+ public float getPrice() {
+  return price;
+ }
+ 
+ 
+
+ /* public void setData(Sting id, String title, float price){
+      this.id=id;
+      this.title=title;
+      this.price=price;
+  }
+
+  public void displayData() {
+   System.out.println(id);
+   System.out.println(title);
+   System.out.println(price);
+  } */
+ }
+
+ public class BookMain{
+   public static void main(String args[]) {
+     Book book=new Book();
+     /* book.setData("B0001","Java",600);
+     book.displayData(); */
+     book.setId("B0001");
+     book.setTitle("Java");
+     book.setPrice(600);
+     String id=book.getId();
+     String title=book.getTitle();
+     float price=book.getPrice();
+     System.out.println(id);
+     System.out.println(title);
+     System.out.println(price);  
+  }
+ }
+----------------------------------------------------------------------------------------------
+1) access specifiers.
+2) Rounding off
+3) methods setter getter methods
+4) this
+------------------------------------------------------------------------
+
+* Access specifiers: They decides accessibility of a class, member variable
+and methods.
+
+* private, default/package, protected ( inheritance) , public
+
+class Revise1{
+    private int num;
+  }
+
+class ReviseMain1 {
+  public static void main(String args[]) {
+   Revise1 rev=new Revise1();
+   System.out.println(rev.num); 
+ }
+}
+
+[Note: The above code gives compilation error as we are trying to access the private member of a
+class Revise1 from main method which is ReviseMain1.]
+
+
+class Revise2{
+    private int num;
+
+    private void display(){
+    System.out.println(num);
+   }
+  }
+
+class ReviseMain2 {
+  public static void main(String args[]) {
+   Revise2 rev=new Revise2();
+   System.out.println(rev.num);
+   rev.display(); 
+ }
+}
+
+[Note: The above code will show compilation error.]
+--------------------------------------------------------------------
+Whenever we are designing a class. Class is having two types of members.
+* member variables/instance variables
+* member methods
+
+class Revise3 {
+   private int num1;
+   private int num2;
+   private String str; 
+   public void setData(int n1, int n2, String s){
+     num1=n1;  // In primitive type we are passing the value of parameter to the instance variable
+     num2=n2;
+     str=s;   // String is not a primitive datatype. It is non-primitive and of Reference type
+              // In this type we are passing the address and not the value. 
+   }
+  public void setData(String s,int n1, int n2 ){
+   num1=n1;
+   str=s;
+   num2=n2;
+   }
+}
+
+ class ReviseMain3 {
+   public static void main(String args[]) {
+     Revise3 revise=new Revise3();
+     revise.setData(1,2,"Welcome");
+    // revise.setData(1,"Welcome",2);
+    revise.setData("Hello",3,4);
+  }
+}
+-----------------------------------------------------------------------
+class BankAccount {
+   private int id;
+   private String accountHolderName;
+   private String bankName;
+/* for a property like id, accountHolderName and bankName we should have a pair of methods.
+  one method to set the value and another method is to display the values.
+  * The method which for is setting the value, have return type as void and parameter of the 
+    same type for which the setter method is written. 
+  * The method starts with set and followed by making the first character of the property in
+    uppercase.
+  * example if we are writting for id , we write as follow:
+  * id is the name of the parameter and id is also the name of the member variable.
+  * the local variable will be having higher preference to the instance variable.
+  * So the parameter id is again assign to id , if we are not using this to differentiate
+    between member and parameter.
+  * this represents the current object 
+   public void setId(int id){
+      this.id=id;
+    }
+  * For reading or accessing the value, we write getter method, so
+  * getter method have return type same as that of the member variable for which we are writting
+    the getter method.
+  * The name of the method starts with get followed by making the first character in uppercase.
+  * We dont have any parameter.
+  * So example:
+   public int getId(){
+     return id;
+   }   
+  
+
+*/
+
+  setter/getter
+
+}
+
+
+-------------------------------------------------------------------------------------------------
+public class Rounding {
+
+	public static void main(String[] args) {
+		
+		float f1=12.45f;
+		float f2=15.67f;
+		float f3=12.50f;
+		float f4=18.49f;
+		System.out.println(Math.round(f1));
+		System.out.println(Math.round(f2));
+		System.out.println(Math.round(f3));
+		System.out.println(Math.round(f4));
+		float f5=123.4657f;
+		System.out.println(Math.round(f5));
+		float f6=Math.round(f5*100)/100.0f;
+	    System.out.println(f6);
+	    float f7=Math.round(f5*10)/10.0f;
+	    System.out.println(f7);
+	}
+
+}
+-------------------------------------------------------------------------------------------------  
+Q. How to create setter getter methods in Eclipse without writing the code.
+A  We can right click on the text editor. Select Source . Select setter and getter.
+
+We cannot have two public classes in the same file. So one of the class which is having
+main, we make that class as public and the other classes we keep them as default(not using any 
+access specifier). Suppose in the below example file name is Tester.java as Tester class is 
+public. Tester class is having the main method. So if multiple classes are present in a 
+single file, that class is made public which is having the main method.
+
+
+
+class Customer {
+
+	private String customerId;
+	private String customerName;
+	private long contactNumber;
+	private String address;
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public long getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
+}
+
+public class Tester {
+
+	public static void main(String args[]) {
+		Customer customer = new Customer();
+		/*
+		 * customer.customerId = "C101"; customer.customerName = "Jack";
+		 * customer.contactNumber = 9870345687L; customer.address =
+		 * "D089, St. Louis Street, Springfield";
+		 * 
+		 * System.out.println("Displaying customer details");
+		 * System.out.println("Customer Id : " + customer.customerId);
+		 * System.out.println("Customer Name : " + customer.customerName);
+		 * System.out.println("Contact Number : " + customer.contactNumber);
+		 * System.out.println("Address : " + customer.address);
+		 */
+		customer.setCustomerId("E0001");
+		customer.setCustomerName("Tom");
+		customer.setContactNumber(1234567890);
+		customer.setAddress("Hyderabad");
+		System.out.println(customer.getCustomerId());
+		System.out.println(customer.getCustomerName());
+		System.out.println(customer.getContactNumber());
+		System.out.println(customer.getAddress());
+		
+	}
+}
+---------------------------------
+public class Employee {
+private int id;
+private String name;
+private String designation;
+private String department;
+private int basic;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getDesignation() {
+	return designation;
+}
+public void setDesignation(String designation) {
+	this.designation = designation;
+}
+public String getDepartment() {
+	return department;
+}
+public void setDepartment(String department) {
+	this.department = department;
+}
+public int getBasic() {
+	return basic;
+}
+public void setBasic(int basic) {
+	this.basic = basic;
+}
+
+}
+
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		Employee employee=new Employee();
+		employee.setId(1);
+		employee.setName("Raghav");
+		employee.setDesignation("Manager");
+		employee.setDepartment("Sales");
+		employee.setBasic(23000);
+		//System.out.println(employee.getId());
+		int id=employee.getId();
+		System.out.println(id);
+		//System.out.println(employee.getName());
+		String name=employee.getName();
+		System.out.println(name);
+		System.out.println(employee.getDesignation());
+		System.out.println(employee.getDepartment());
+		System.out.println(employee.getBasic());
+
+	}
+
+}
+------------------------------------------------------------------------------------------------------
+public class Employee2 {
+private int id;
+private String name;
+private String designation;
+private String department;
+private int basic;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getDesignation() {
+	return designation;
+}
+public void setDesignation(String designation) {
+	this.designation = designation;
+}
+public String getDepartment() {
+	return department;
+}
+public void setDepartment(String department) {
+	this.department = department;
+}
+public int getBasic() {
+	return basic;
+}
+public void setBasic(int basic) {
+	this.basic = basic;
+}
+
+}
+
+
+public class EmployeeMain2 {
+	public static void main(String[] args) {
+		Employee2 employee1=new Employee2();
+                Employee2 employee2=new Employee2();
+		employee1.setId(1);
+		employee1.setName("Raghav");
+		employee1.setDesignation("Manager");
+		employee1.setDepartment("Sales");
+		employee1.setBasic(23000);
+                employee2.setId(2);
+                employee2.setName("Akash");
+                employee2.setDesignation("AsstManager");
+                employee2.setDepartment("Sales");
+                employee2.setBAsic(20000);
+		//System.out.println(employee1.getId());
+		int id=employee1.getId();
+		System.out.println(id);
+		//System.out.println(employee1.getName());
+		String name=employee1.getName();
+		System.out.println(name);
+		System.out.println(employee1.getDesignation());
+		System.out.println(employee1.getDepartment());
+		System.out.println(employee1.getBasic());
+               employee2.setBAsic(20000);
+		System.out.println(employee2.getId());
+		System.out.println(employee2.getName());
+		System.out.println(employee2.getDesignation());
+		System.out.println(employee2.getDepartment());
+		System.out.println(employee2.getBasic());
+
+	}
+
+}
+
+--------------------------------------------------------------------------------------
+class Employee {
+
+	String employeeId;
+	String employeeName;
+	int salary;
+	int bonus;
+	int jobLevel;
+
+	public void calculateSalary() {
+		if (this.jobLevel >= 4) {
+			this.bonus = 100;
+		} else {
+			this.bonus = 50;
+		}
+		this.salary += this.bonus;
+	}
+}
+
+class Tester {
+
+	public static void main(String args[]) {
+
+		Employee employee = new Employee();
+		employee.employeeId = "C101";
+		employee.employeeName = "Steve";
+		employee.salary = 650;
+		employee.jobLevel = 4;
+
+		employee.calculateSalary();
+
+		System.out.println("Employee Details");
+		System.out.println("Employee Id: " + employee.employeeId);
+		System.out.println("Employee Name: " + employee.employeeName);
+		System.out.println("Salary: " + employee.salary);
+
+	}
+}
+---------------------------------------------------------------------------
+class Main {
+    public static void main(String args[]) {
+    System.out.println("Hello Friends");
+    Scanner scan=new Scanner(System.in);
+    int num=scan.nextInt();
+    }
+   }
+ }
+[So we are not able to see the implementation of println and nextInt method. ]
+----------------------------------------------------------------------------------------
+Without abstraction
+
+We have a class Number and we have to find the number which max/larger.
+
+
+  public class Number {
+   private int num1;
+   private int num2;
+   private int max;
+   
+   // setter/getter methods for num1,num2 and max.
+    
+
+   }
+ 
+   public class NumberMain {
+   public static void main(String args[]) {
+    Number number=new Number();
+    number.setNum1(10);
+    number.setNum2(2);
+    if(number.getNum1()>number.getNum2()){
+    number.setMax(number.getNum1());
+    }
+    else
+    {
+    number.setMax(number.getNum2());
+    }
+    System.out.println(number.getMax());
+   }
+ }
+ -----------------------------------
+
+  public class Number {
+   private int num1;
+   private int num2;
+   private int max;
+   
+   // setter/getter methods for num1,num2 and max.
+    
+
+   }
+ 
+   public class NumberMain {
+   public static void main(String args[]) {
+    Number number=new Number();
+    number.setNum1(10);
+    number.setNum2(2);
+    int max=(number.getNum1()>number.getNum2())?number.getNum1():number.getNum2();
+    System.out.println(max);
+ }
+}
+-------------------------------------------------------------
+Abstraction
+
+
+ public class Number {
+   private int num1;
+   private int num2;
+   private int max;
+   
+   // setter/getter methods for num1,num2 and for max only the getter method
+    
+    public int getMax(){
+    /*  if(num1>num2) {
+       max=num1;
+      }  
+      else {
+      max=num2;
+      } */
+      max=(num1>num2)?num1:num2;
+      return max;
+     }
+    
+   }
+ 
+   public class NumberMain {
+   public static void main(String args[]) {
+    Number number=new Number();
+    number.setNum1(10);
+    number.setNum2(2);
+    int max=number.getMax();
+    System.out.println(max);
+   }
+ }
+-----------------------------------------------------------------------------------------------------
+Complete the code with proper access specifiers and add the code as required.
+
+public class Number {
+ private int num1;
+ private int num2;
+ private int result;
+ 
+ //setter/getter methods for num1 and num2 and decide whether we require setter and getter for result
+
+
+ 
+
+public int add(){
+ 
+ }
+
+public int subtract(){
+
+ }
+
+public int multiply(){
+
+ }
+
+public int max(){
+ }
+ 
+public int min(){
+ }
+
+}
+
+import java.util.Scanner;
+public class NumberMain{
+   public static void main(String args[]) {
+    Number number=new Number();
+    int result=0;
+    int num1;
+    int num2;
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Enter number1");
+    System.out.println("Enter number2");
+    System.out.println("The addition of num1 "+" and num2="+result);
+    System.out.println("The subtraction of num2 "+" from num1="+result);
+    System.out.println("The multiplication of num1 "+"with num2="+result);
+    System.out.println(result+" is maximum");
+    System.out.println(result+" is minimum");
+    }
+ }
+
+---------------------------------------------------------------
+SOLUTION
+
+public class Number {
+ private int num1;
+ private int num2;
+ private int result;
+ 
+ //setter/getter methods for num1 and num2 and decide whether we require setter and getter for result
+public int getNum1() {
+	return num1;
+}
+
+public void setNum1(int num1) {
+	this.num1 = num1;
+}
+
+public int getNum2() {
+	return num2;
+}
+
+public void setNum2(int num2) {
+	this.num2 = num2;
+}
+
+public int add(){
+	 result=num1+num2;
+	 return result;
+	 }
+
+public int subtract(){
+	result=num1-num2;
+	 return result;
+ }
+
+public int multiply(){
+	result=num1*num2;
+	 return result;
+ }
+/*
+ * if(num1>num2){
+ * max=num1;
+ * }
+ * else
+ * {
+ * max=num2;
+ * }
+ */
+public int max(){
+	result=(num1>num2)?num1:num2;
+	return result;
+ }
+ 
+public int min(){
+ result=(num1<num2)?num1:num2;
+ return result;
+
+}
+
+}
+
+import java.util.Scanner;
+public class NumberMain{
+   public static void main(String args[]) {
+    Number number=new Number();
+    int result=0;
+    int num1;
+    int num2;
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Enter number1");
+    num1=scan.nextInt();
+    number.setNum1(num1);
+    System.out.println("Enter number2");
+    num2=scan.nextInt();
+    number.setNum2(num2);
+    result=number.add();
+    System.out.println("The addition of num1 "+" and num2="+result);
+    System.out.println("The addition of "+number.getNum1()+" and "+number.getNum2()+"="+result);
+    result=number.subtract();
+    System.out.println("The subtraction of num2 "+" from num1="+result);
+    result=number.multiply();
+    System.out.println("The multiplication of num1 "+"with num2="+result);
+    result=number.max();
+    System.out.println(result+" is maximum");
+    result=number.min();
+    System.out.println(result+" is minimum");
+    }
+ }
+
+------------------------------------------------------------------------------
+public class StringDemo1 {
+
+   public static void main(String args[]) {
+  // In the below statement we created a String reference variable with the name str1 and it is storing the address of the string "Welcome".    
+   String str1="Welcome";
+  // We created a string object called the parameterized constructor of String class which is
+  // accepting a String as a parameter 
+  String str2=new String("Hello");
+  System.out.println(str1);
+  System.out.println(str2);
+ }
+} 
+       
+--------------
+public class StringDemo2 {
+
+   public static void main(String args[]) {
+   String str1="hello"; // In this line hello is a string literal/constant
+   // So when we writing the above line, it will first check whether we 
+   // have hello in the String constant pool, as in our case it is first
+   // line , it wont find "hello" in the string pool. So this constant(hello) is placed 
+   // in the string pool
+  String str2="hello"; // For this line again a check is done in the String constant pool,
+  // this time a string literal "hello" is found in the pool. So now the reference variable
+  // str2 will also point to the same string literal hello which got created before.
+   System.out.println(str1==str2);
+  }
+} 
+
+public class StringDemo3 {
+
+   public static void main(String args[]) {
+   String str1=new String("hello"); 
+   String str2=new String("hello"); 
+   System.out.println(str1==str2);
+  }
+} 
+
+--------------------------------------------------------------------------------------
+public class StringDemo4 {
+
+   public static void main(String args[]) {
+   String str1="hello"; 
+   int length=str1.length();
+   System.out.println(length);   //5
+   str1="Welcome";
+   length=str1.length();
+   System.out.println(length);   //7
+ }
+}
+---------------------------------------------------------------------------------------------------- 
+public class StringDemo5 {
+  public static void main(String args[]) {
+    String str1="Hello";
+    String str2="World";
+    String str3=str1+str2;
+    System.out.println(str3);
+    String str4=str1.concat(str2);
+    System.out.println(str4);
+    String str5=str1+" "+str2;
+    System.out.println(str5);
+    String str6=str1.concat(" ").concat(str2);
+          // Hello(space is concatenated
+          // Hello World
+    System.out.println(str6);
+  }
+ }
+-------------------------------------------------------------------------------------------------
+   public class StringDemo6 {
+     public static void main(String args[]) {
+      String str1="hello";
+      String str2="hello";
+      String str3=new String("hello");
+      String str4=new String("hello");
+      System.out.println(str1==str2);  // true   == checks whether the reference variable are pointing to the same object or not
+      System.out.println(str3==str4);  // false
+      System.out.println(str1.equals(str2)); // true  // equals will check for the content , whether the content of the objects are same or not.
+
+      System.out.println(str3.equals(str4)); // true
+    }
+  }
+[So whenever we are planning to compare two strings, we should use equals or equalsIgnoreCase method.]
+---------------------------------------------------------------
+ public class StringDemo7 {
+     public static void main(String args[]) {
+      String str1="hello";
+      String str2="hEllo";
+      String str3=new String("hello");
+      String str4=new String("hello");
+      System.out.println(str1==str2);  // false  == checks whether the reference variable are pointing to the same object or not.Here the object are different one small e and another with uppercase E.
+      System.out.println(str3==str4);  // false
+      System.out.println(str1.equals(str2)); // false  // equals will check for the content , whether the content of the objects are same or not.
+      System.out.println(str1.equalsIgnoreCase(str2)); //true comparison is done without considering the case 
+      System.out.println(str3.equals(str4)); // true
+    }
+  }
+--------------------------------------------------------------------------
+public class StringDemo8 {
+     public static void main(String args[]) {
+      String str1="welcome";
+      String upper=str1.toUpperCase();
+      System.out.println(upper);
+      String str2="WELCOME";
+      String lower=str2.toLowerCase();
+      System.out.println(lower);
+     }
+  }
+-----------------------------------------------------------------------------------------------------
+public class StringDemo9 {
+     public static void main(String args[]) {
+      String str1="welcome";
+      char ch=str1.charAt(0);
+      System.out.println(ch); //w
+      ch=str1.charAt(2);  //l
+      System.out.println(ch);
+     // ch=str1.charAt(20); // java.lang.StringIndexOutOfBoundsException: String index out of range: 20
+     // System.out.println(ch);
+     }
+  }
+-------------------------------------------------------------------------------------------------------------
+public class StringDemo10 {
+     public static void main(String args[]) {
+      String str1="welcome";
+      String subString1=str1.substring(3); // Start from the 3rd position of String till the end of the String
+      System.out.println(subString1); //come
+      String subString2=str1.substring(2,4); // 2==> startIndex, 4===> endIndex(endIndex-1) //lc
+      System.out.println(subString2);
+     }
+  }
+-------------------------------
+public class StringDemo11 {
+     public static void main(String args[]) {
+      String str1="welcome";
+      boolean b=str1.contains("come");
+      System.out.println(b);   //true
+      b=str1.contains("done");
+      System.out.println(b);  //false
+     }
+  }
+-------------------------------------------
+public class StringDemo12 {
+     public static void main(String args[]) {
+      String str1="welcome";
+      String str2=str1.replace('e','i');
+      System.out.println(str2);   // wilcomi
+     }
+  }
+-----------------------------------------------------------------------------------------------------
+Arrays---> 
+* data being stored in adjacent location and can be addressed by single variable name. Arrays storing data of same type. 
+* Arrays are treated as objects in Java.
+* Arrays needs to have a fixed size ( Disadvantage)
+   Challenge is if we want add more elements/data dynamically then 
+   it will create a problem or suppose we want add new items it will nbe
+   challenge for us.
+
+   So to solve this we fo for other data structures---> LinkedList, Stack,Queue,Tree
+   ( Collection API)     
+         
+Array defining an array in java
+
+  int arr[]=new int[5];
+
+// int arr[]; ---> We are declaring an array
+// new int[5];----> defining and initialising the array
+
+  OR
+
+   int arr[];    // This is Array declaration
+   arr=new int[5]; // defining the array by fixing up a size of 5 and 
+   intialising the array. As it is of  // int type , the array will have the default value as 0 ( and not 
+   // garbage value)
+
+
+class ArrayDemo1 {
+  public static void main(String args[]) {
+   int num[]; // array declaration 
+   num=new int[5]; // We have mentioned a size of 5 and each element is initialised with initial 
+                   // value as 0
+  for(int i=0;i<num.length;i++){
+   System.out.println(num[i]);
+    }  //end of loop
+  }    // end of main
+}      // end of clas
+---------------------------------------------------------------------------------------------
+class ArrayDemo2 {
+  public static void main(String args[]) {
+   int num[]=new int[5]; // Array declaration and initialisation in the same line
+  for(int i=0;i<num.length;i++){
+   System.out.println(num[i]);
+    } // end of loop
+  }  // end of main
+} // end of class
+------------------------------------------------------------------------------------------------
+
+class ArrayDemo3 {
+  public static void main(String args[]) {
+   int num[]={1,2,3,4,5,6};
+  for(int i=0;i<num.length;i++){
+   System.out.println(num[i]);
+  }
+  }
+}
+-------------------------------------------------------------------------------------------
+class ArrayDemo4 {
+  public static void main(String args[]) {
+   boolean b[]=new boolean[5];
+  for(int i=0;i<b.length;i++){
+   System.out.println(b[i]);
+  }
+  }
+}
+------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+class ArrayDemo5 {
+  public static void main(String args[]) {
+  int numbers[]=new int[5];
+  Scanner scan=new Scanner(System.in);
+  for(int i=0;i<numbers.length;i++){
+     System.out.println("Enter the number");
+     numbers[i]=scan.nextInt();
+   }
+  System.out.println("The values");
+  for(int i=0;i<numbers.length;i++){
+   System.out.println(numbers[i]);
+  } 
+  }
+}
+-----------------------------------------------------------------------------------------
+import java.util.Scanner;
+class ArrayDemo6 {
+  public static void main(String args[]) {
+  String names[]=new String[5];
+  Scanner scan=new Scanner(System.in);
+  for(int i=0;i<names.length;i++){
+     System.out.println("Enter the name");
+     names[i]=scan.next();
+   }
+  System.out.println("The values");
+   for(int i=0;i<names.length;i++){
+     System.out.println(names[i]);
+    } 
+  }
+}
+---------------------------------------------------------------------------------------------
+class ArrayDemo7 {
+  public static void main(String args[]) {
+  int numbers[][]=new int[3][4];
+  
+  for(int row=0;row<numbers.length;row++){
+    for(int col=0;col<numbers[row].length;col++){
+         System.out.print(numbers[row][col]);
+         }
+       System.out.println();
+     }
+  }
+}
+--------------------------------------------------------------------------------------------------
+
+class ArrayDemo8 {
+  public static void main(String args[]) {
+  int numbers[][]={{1,2,3},{4,5,6},{7,8,9}};
+  
+  for(int row=0;row<numbers.length;row++){
+    for(int col=0;col<numbers[row].length;col++){
+         System.out.print(numbers[row][col]);
+         }
+         System.out.println();
+     }
+  }
+}
+------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+class ArrayDemo9 {
+  public static void main(String args[]) {
+  int numbers[][]=new int[3][4];
+  Scanner scan=new Scanner(System.in);
+  for(int row=0;row<numbers.length;row++){
+    for(int col=0;col<numbers[row].length;col++){
+         System.out.println("Enter the value");
+         numbers[row][col]=scan.nextInt();
+         }
+     }
+ for(int row=0;row<numbers.length;row++){
+    for(int col=0;col<numbers[row].length;col++){
+         System.out.print(numbers[row][col]);
+        
+         }
+     System.out.println(); 
+    }
+ 
+
+ }
+}
+
+--------------------------------------------------------------------------------------------
+
+Q Enter 10 numbers and perform addition of those 10 numbers.
+
+ Writing a code following procedural approach.
+
+
+ int main(){
+   int num[10];
+   int ctr;
+   for(ctr=0;ctr<10;ctr++){
+   }
+  }
+   
+Observation:
+* main is not within a class. 
+
+Q Can we have exactly same kind of code in java(without a class)?
+A No. We have to write the main within a class.
+
+class Main1{
+   public static void main(String args[]) {
+    int num[]=new int[10];
+    int sum=0;
+    Scanner scan=new Scanner(System.in);
+    for(int i=0;i<num.length;i++){
+     System.out.println("Enter the number");
+     num[i]=scan.nextInt();
+     sum+=num[i];
+    }
+    System.out.println(sum);
+  }
+}
+Observations:-
+* main method is within a class and that is mandatory in java.
+* We have worked with local variables/objects. Local variables are those which are created in a block scope. Like num, sum,i
+  and scan which is an object of class Scanner. So main is the method and all the mentioned variables and objects are local to main.
+
+Q Can I write this logic of adding numbers in a separate method other than main?
+A Yes. S
+
+class Main2{
+
+   public static int add(int n[]){
+     int sum=0;
+   for(int i=0;i<n.length;i++){
+       sum+=n[i];
+     }
+     return sum;    
+
+   }
+
+   public static void main(String args[]) {
+    //int num[]={11,15,23,45,67,89,80};
+    int num[]=new int[10];
+    
+    Scanner scan=new Scanner(System.in);
+   for(int i=0;i<num.length;i++){
+     System.out.println("Enter the number");
+     num[i]=scan.nextInt();
+
+    }
+     int sm=add(num);
+    System.out.println(sm);
+    // System.out.println(add(num));
+  }
+}
+ 
+So why in the above code add is again a static method. 
+Ans : A static method can call only other static method without the object. 
+Observations:
+* int num[] is local to main method.
+* scan is local to main method.
+* i is local to main method.
+* sm is local to main method.
+* int n[] parameter is local to add method.
+* sum is local to add method.
+-----------------------------------------------------------------------------------------------------------  
+-------------------------------------------------------------------------------------------------------------------------
+Q Can we implement the above code by planning with Object oriented approach where we will declare the num array and sum 
+as instance variables and that too in a single class and we wont be making the add method as static.
+A Yes
+
+class Main3{
+  private int num[];
+  private int sum;
+
+ public void setNum(int num[])
+  {
+     this.num=num;
+  }
+
+ public int add(){
+   
+    for(int i=0;i<num.length;i++){
+       sum+=num[i];
+     }
+     return sum;   
+   }
+
+public static void main(String args[]) {
+    Main3 m=new Main3();
+    int num[]=new int[10];
+    Scanner scan=new Scanner(System.in);
+   for(int i=0;i<num.length;i++){
+     System.out.println("Enter the number");
+     num[i]=scan.nextInt();
+
+    }
+     m.setNum(num);
+     int sm=m.add();
+    System.out.println(sm);
+  }
+
+}
+As in the above code add is non static we need to create an object of the class where add is and then we can access add
+with the object reference.
+Observations:
+* add is non static.
+* setNum is non static.
+* setNum is with array as a parameter.
+* num is local to main
+* another num is an instance variable of class Main3.
+* sum is an instance variable of class Main3.
+* sm is local to main method.
+* i is local to main method.
+* i is local to add method also.
+* int num[] local to setNum method.
+* sum is not initialised with 0 explicitly. The default constructor will initialise sum with the value 0.
+
+-------------------------------------------------------------------------------------------------------------
+Q Can we have two separate classes, one for the logic with number and another having the main method and that too in different files?
+A Yes
+
+Number.java
+
+public class Number{
+  private int num[];
+  private int sum;
+
+ public void setNum(int num[])
+  {
+     this.num=num;
+  }
+
+ public int add(){
+   
+    for(int i=0;i<num.length;i++){
+       sum+=num[i];
+     }
+     return sum;   
+   }
+}
+
+
+Main4.java
+public class Main4 {
+public static void main(String args[]) {
+    Number number=new Number();
+    int num[]=new int[10];
+    Scanner scan=new Scanner(System.in);
+   for(int i=0;i<num.length;i++){
+     System.out.println("Enter the number");
+     num[i]=scan.nextInt();
+
+    }
+     number.setNum(num);
+     int sm=number.add();
+    System.out.println(sm);
+  }
+
+}
+The above code is with two different classes and that too by following the object oriented concept.
+Observations:
+* int num[] in 3 places. local to main method. local to setNum method as a parameter and as instance variable of class Number.
+* sm,i,scan are local to main method.
+* sum is an instance variable of class Number. i is local variable to method add. 
+------------------------------------------------------------------------------------------------------------
+
+Write a code to find out the minimum number out of the 10 numbers.
+
+public class Numbers{
+      private int num[];
+      private int min;
+	public int[] getNum() {
+		return num;
+	}
+	public void setNum(int[] num) {
+		this.num = num;
+	}
+	public int getMin() {
+		min=num[0];
+		for(int i=0;i<num.length;i++)
+		{
+			if(num[i]<min)
+			{
+				min=num[i];
+			}
+		}
+		return min;
+	}
+
+   //setter/getters
+
+   
+
+ public class NumbersMain{
+    public static void main(String[] args){
+    int num[]={100,2,2,4,8,20,30,67,9,10};
+    Numbers numbers=new Numbers();
+    numbers.setNum(num);
+    int min=numbers.getMin();
+    System.out.println("The numbers are");
+    num=numbers.getNum();
+    for(int n : num)
+    {
+    	System.out.println(n);
+    }
+    
+    System.out.println("The minimum value "+min);
+   }
+  }
+ 
+Output
+-2
+
+------------------------------------------------------------------
+
+class Customer {
+	private String customerId;
+	private String customerName;
+	private long contactNumber;
+	private String address;
+
+	public Customer(String customerId, String customerName, long contactNumber,
+			String address) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.contactNumber = contactNumber;
+		this.address = address;
+	}
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public long getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public void displayCustomerDetails() {
+		System.out.println("Displaying customer details \n***********");
+		System.out.println("Customer Id : " + customerId);
+		System.out.println("Customer Name : " + customerName);
+		System.out.println("Contact Number : " + contactNumber);
+		System.out.println("Address : " + address);
+		System.out.println();
+	}
+	public double payBill(double totalPrice) {
+		double discountPercentage = 5;
+		System.out.println("Calculating final amount to be paid.....");
+		double priceAfterDiscount = totalPrice * (1 - (discountPercentage / 100));
+		return priceAfterDiscount;
+	}
+}
+public class Tester {
+	public static void main(String[] args) {
+		Customer customer1 = new Customer("C1001", "Sam", 9945000009L,
+				"Carolina Street, Springfield, 62702");
+		System.out.println("Final amount to be paid: $" +customer1.payBill(20));
+	}
+}
+
+//Q In the above example total price and discount price is taken local to the payBill method. Why so? They are not being taken 
+as instance variables.
+//A) You will get your answer if you can think what are attributes or properties of a customer through which we identify a Customer.
+ 
+Q Do you think a Customer is being identified with an attribute called totalPrice and discount?
+A) No. A customer can be identified with customer id, name, address , phone number but we never identify an attribute called
+  total price or discount on Price for a Customer. That is the reason we have not taken totalPrice and discount as a member of the
+  class.
+
+--------------------------------------------------
+Q We have a book class with bookId, desc, price , author name. We have to use Scanner for taking user input in setData method
+within the Book class. So what do you think Scanner should be an instance variable or local object to setData() method.
+
+public class Book {
+   private int bookId;
+   private String desc;
+  // private Scanner scan;
+   private float price;
+}
+
+We dont identify a Book with an attribute called Scanner. Scanner is a class whose object is used for a purpose. The purpose is
+to take user input. So we should take Scanner object local to the method which is responsible for taking user input.
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+class Customer {
+	private String customerId;
+	private String customerName;
+	private long contactNumber;
+	private String address;
+        private float deliveryCharge;
+
+	public Customer(String customerId, String customerName, long contactNumber,
+			String address) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.contactNumber = contactNumber;
+		this.address = address;
+                deliveryCharge=1.5f;
+	}
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public long getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public void displayCustomerDetails() {
+		System.out.println("Displaying customer details \n***********");
+		System.out.println("Customer Id : " + customerId);
+		System.out.println("Customer Name : " + customerName);
+		System.out.println("Contact Number : " + contactNumber);
+		System.out.println("Address : " + address);
+		System.out.println();
+	}
+	public double payBill(double totalPrice) {
+		double discountPercentage = 5;
+		System.out.println("Calculating final amount to be paid.....");
+		double priceAfterDiscount = totalPrice * (1 - (discountPercentage / 100));
+		return priceAfterDiscount;
+	}
+}
+public class Tester {
+	public static void main(String[] args) {
+		Customer customer1 = new Customer("C1001", "Sam", 9945000009L,
+				"Carolina Street, Springfield, 62702");
+		System.out.println("Final amount to be paid: $" +customer1.payBill(20));
+	}
+}
+// So we want to have delivery charge but that charge is fixed for all the customers.
+// So instead of setting the value through parameterized constructor or through setter method, we can initialise with the
+ constant value within the constructor.
+
+// Requirement is we need to have same value for deliveryCharge. So instead of separate copies for the objects, we are going to
+// maintain a single copy of deliveryCharge. 
+
+So how it is possible to have a single copy of an object or a variable?
+A Declare that object or variable as static.
+
+class Customer {
+	private String customerId;
+	private String customerName;
+	private long contactNumber;
+	private String address;
+        private static float deliveryCharge;
+
+	public Customer(String customerId, String customerName, long contactNumber,
+			String address) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.contactNumber = contactNumber;
+		this.address = address;
+                deliveryCharge=1.5f;
+	}
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public long getContactNumber() {
+		return contactNumber;
+	}
+	public void setContactNumber(long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public void displayCustomerDetails() {
+		System.out.println("Displaying customer details \n***********");
+		System.out.println("Customer Id : " + customerId);
+		System.out.println("Customer Name : " + customerName);
+		System.out.println("Contact Number : " + contactNumber);
+		System.out.println("Address : " + address);
+		System.out.println();
+	}
+	public double payBill(double totalPrice) {
+		double discountPercentage = 5;
+		System.out.println("Calculating final amount to be paid.....");
+		double priceAfterDiscount = totalPrice * (1 - (discountPercentage / 100));
+		return priceAfterDiscount;
+	}
+}
+public class Tester {
+	public static void main(String[] args) {
+		Customer customer1 = new Customer("C1001", "Sam", 9945000009L,
+				"Carolina Street, Springfield, 62702");
+		System.out.println("Final amount to be paid: $" +customer1.payBill(20));
+	}
+}
+  
+  So if the member variable is non static , then we have separate copies for each object but when it is static we 
+  have single copy of the variable which can be accessed by any object of the same class. 
+
+
+
+To create a static member variable, precede its declaration with the keyword static. When a member is declared static, it can be accessed before any object of the class is created and without reference to any object. 
+
+
+public class Numbers2 {
+  int num;
+  static int staticNum=10;
+ 
+}
+
+
+public class NumbersMain2 {
+
+	public static void main(String[] args) {
+	// A static member can be accessed with the
+		// class we dont require an object to 
+		// access a static member
+		System.out.println(Numbers2.staticNum);
+   // A non static member cannot be access with the 
+   // class , for accessing a non static member
+	// we have create the object of the class
+	// which is having the non static member
+		
+		// System.out.println(Numbers2.num);
+	   Numbers2 number=new Numbers2();
+	   System.out.println(number.num);
+	}
+
+}
+// An object can also of static. It is not only the primitive type.
+// We have only one copy of static member. 
+
+
+---------------------
+
+
+
+
+
+public class Numbers3{
+ int num;
+static int staticNum;
+
+static{
+ staticNum=100;
+}
+ 
+}
+
+
+public class NumbersMain3 {
+
+	public static void main(String[] args) {
+	// A static member can be initialised at
+	// the place of declaration
+	// static int num=10;
+	// another way is thru static block
+   // static {
+		   //num=10;
+		//}
+		System.out.println(Numbers3.staticNum);
+        Numbers3.staticNum=1000;
+        System.out.println(Numbers3.staticNum);
+		// System.out.println(Numbers2.num);
+	   Numbers3 number=new Numbers3();
+	   System.out.println(number.num);
+	}
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+public class Numbers4{
+ int num;
+static int staticNum;
+
+static{
+ staticNum=100;
+ System.out.println("static block is called");
+}
+ 
+Numbers4(int num, int num2){
+  this.num=num;
+  this.staticNum=num2;
+  System.out.println("I am the parameterized constructor");
+}
+
+void dispData(){
+  System.out.println(num);
+  System.out.println(staticNum);
+}
+}
+
+
+public class NumbersMain4{
+    public static void main(String args[]) {
+      Numbers4 num1=new Numbers4(1,200);
+      Numbers4 num2=new Numbers4(2,300);
+      num1.dispData();
+      num2.dispData();
+    }
+ }
+
+-----------------------------------------------------
+Q How we can access the static variables with methods?
+A we can access them with static method( Which we usually do but static variables can be accessed through non static methods also)
+
+
+public class Numbers5{
+ int num;
+static int staticNum;
+
+static{
+ staticNum=100;
+ System.out.println("static block is called");
+}
+ 
+Numbers5(int num, int num2){
+  this.num=num;
+  this.staticNum=num2;
+  System.out.println("I am the parameterized constructor");
+}
+
+void dispData(){
+  System.out.println(num);
+  System.out.println(staticNum);
+}
+}
+
+
+public class NumbersMain5{
+    public static void main(String args[]) {
+      Numbers5 num1=new Numbers5(1,200);
+      Numbers5 num2=new Numbers5(2,300);
+      num1.dispData();
+      num2.dispData();
+    }
+ }
+// In the above example dispData is a non static method and it is accessing the static and non static members.
+
+Q Can a static method access a non static variable and static variable?
+A a static method can access a static member but to access non static member, we have to create the object the object of
+the class which is having the non static member.
+
+
+public class Numbers6{
+ int num;
+static int staticNum;
+
+static{
+ staticNum=100;
+ System.out.println("static block is called");
+}
+ 
+Numbers6(int num, int num2){
+  this.num=num;
+  this.staticNum=num2;
+  System.out.println("I am the parameterized constructor");
+}
+
+void dispData(){
+  System.out.println(num);
+  //System.out.println(staticNum);
+}
+
+static void dispStaticData(){
+  //System.out.println(num);
+  // Number6 number=new Number6();
+  //System.out.println(number.num);
+   System.out.println(staticNum);
+}
+
+}
+
+
+public class NumbersMain6{
+    public static void main(String args[]) {
+      Numbers6 num1=new Numbers6(1,200);
+      Numbers6 num2=new Numbers6(2,300);
+      num1.dispData();
+      num2.dispData();
+      Numbers6.dispStatic();
+    }
+ }
+
+// In the above example non static method dispData() can access both static and non static member but it is good to 
+access non static member from a non static method.
+// A static method cannot access a non static member until unless we create an object of the class , In our example we
+// created an object of the class Number6 in dispStaticData() method which is a static method and accessed the non static
+variable.
+---------------------------------------------------------------------------------------------------------------------------
+Points for static members:
+* a method and member variable can be declared as static.
+* outer class cannot be declared as static.
+  The below declaration is not possible  
+   public static class Data{}
+* The inner class can be a static class.
+   public class Data{
+     public static class Data2{}
+    }
+* static block is used to initialise static member variable of a class.
+* static variable can be of primitive or of reference type.
+* static block is called once.
+* static method can access any other static method or static variable.
+* static method can access non static member after creating the object of the class where the non static member is declared.
+* non static method can access both static and non static member. 
+* Though static member can be accessed with object but we should access static member with the class name.
+--------------------------------------------------------------------------------------------------------------------------
+Create a code to count the number of objects created.
+  public class Customer {
+   private int id;
+   private String name;
+   private String address;
+   private static int count;
+
+      public Customer(){
+       count++;
+      }
+
+      public static int countObject(){
+       return count;
+      }
+   }
+
+  public class CustomerMain{
+
+    public static void main(String args[]){
+     Customer cust=new Customer();
+     Customer cust2=new Customer();
+     System.out.println(Customer.countObject()); //2
+     Customer cust3=new Customer();
+     System.out.println(Customer.countObject()); //3
+   }
+ }
+  // the static members get the default value if not initialised. So in the above example count gets the initial value of 0
+as it is of int type.
+------------------------------------------------------------------------------------------------------------
+static keyword
+
+class design
+instance variables/ non-static variables
+
+class variables/ static variables
+
+example swiftfood - orders delivery charges will be same for all the customer
+so we want to maintain only one copy of variable for delivery charges
+
+use static properties
+shared by all objects/ common to all objects
+example student class - 3 subjects are common to all the students
+manipulation is easy, simple, enhances memory managementby avoiding duplication
+
+
+class properties - use static keyword
+static variable, static block, static method
+
+static variable is used to define class property 
+
+static block is used to initialize static data memebers
+
+static method is used to access and process static data members
+
+non-static methods can access static data members 
+but static methods cannot access iinstance data members
+
+another use is for autogeneration of values
+
+
+// static demo for static data members and initialization with declaration
+
+class Student
+{
+	private int roll;
+	private String name;
+	private static String subject1="Mathematics";
+	private static String subject2="Science";
+	private static String subject3="English";
+
+	public Student(int roll,String name)
+	{
+		this.roll=roll;
+		this.name=name;
+	}
+
+	public int getRoll(){return roll;}
+	public void setRoll(int roll){this.roll=roll;}
+	public String getName(){return name;}
+	public void setName(String name){this.name=name;}
+	
+	public void display()
+	{
+		System.out.println("Roll Number : "+roll);
+		System.out.println("Name : "+name);
+		System.out.println("Subject 1 : "+subject1);
+		System.out.println("Subject 2 : "+subject2);
+		System.out.println("Subject 3 : "+subject3);
+		System.out.println("\n\n");
+	}
+}
+
+class Tester
+{
+	public static void main(String s[])
+	{
+		Student s1=new Student(101,"Anil");
+		Student s2=new Student(102,"Pooja");
+		s1.display();
+		s2.display();
+	}
+}
+
+	
+
+//static demo for initialization using static block
+
+class Student
+{
+	private int roll;
+	private String name;
+	private static String subject1;
+	private static String subject2;
+	private static String subject3;
+	
+	static
+	{
+	subject1="Mathematics";
+	subject2="Science";
+	subject3="English";
+	}
+
+	public Student(int roll,String name)
+	{
+		this.roll=roll;
+		this.name=name;
+	}
+
+	public int getRoll(){return roll;}
+	public void setRoll(int roll){this.roll=roll;}
+	public String getName(){return name;}
+	public void setName(String name){this.name=name;}
+	
+	public void display()
+	{
+		System.out.println("Roll Number : "+roll);
+		System.out.println("Name : "+name);
+		System.out.println("Subject 1 : "+subject1);
+		System.out.println("Subject 2 : "+subject2);
+		System.out.println("Subject 3 : "+subject3);
+		System.out.println("\n\n");
+	}
+}
+
+class Tester
+{
+	public static void main(String s[])
+	{
+		Student s1=new Student(101,"Anil");
+		Student s2=new Student(102,"Pooja");
+		s1.display();
+		s2.display();
+	}
+}
+
+	
+
+//static demo for static methods
+
+class Student
+{
+	private int roll;
+	private String name;
+	private static String subject1;
+	private static String subject2;
+	private static String subject3;
+	
+	static
+	{
+	subject1="Mathematics";
+	subject2="Science";
+	subject3="English";
+	}
+
+	public Student(int roll,String name)
+	{
+		this.roll=roll;
+		this.name=name;
+	}
+
+	public int getRoll(){return roll;}
+	public void setRoll(int roll){this.roll=roll;}
+	public String getName(){return name;}
+	public void setName(String name){this.name=name;}
+
+	public static String getSubject1(){return subject1;}
+	public static void setSubject1(String subject1){Student.subject1=subject1;}
+
+	public void display()
+	{
+		System.out.println("Roll Number : "+roll);
+		System.out.println("Name : "+name);
+		System.out.println("Subject 1 : "+subject1);
+		System.out.println("Subject 2 : "+subject2);
+		System.out.println("Subject 3 : "+subject3);
+		System.out.println("\n\n");
+	}
+}
+
+class Tester
+{
+	public static void main(String s[])
+	{
+		Student s1=new Student(101,"Anil");
+		Student s2=new Student(102,"Pooja");
+		s1.display();
+		s2.display();
+		Student.setSubject1("JAVA");
+		System.out.println("changed subject "+Student.getSubject1());
+		System.out.println("\n\n");
+		s1.display();
+		s2.display();
+
+	}
+}
+
+	
+
+//static demo for static members as array
+
+class Student
+{
+	private int roll;
+	private String name;
+	private static String[] subject;
+	 
+	
+	static
+	{
+	subject=new String[]{"Mathematics","Science","English"};
+	}
+
+	public Student(int roll,String name)
+	{
+		this.roll=roll;
+		this.name=name;
+	}
+
+	public int getRoll(){return roll;}
+	public void setRoll(int roll){this.roll=roll;}
+	public String getName(){return name;}
+	public void setName(String name){this.name=name;}
+
+	public static String getSubject(int index){return subject[index];}
+	public static void setSubject(int index,String subject){Student.subject[index]=subject;}
+
+	public void display()
+	{
+		System.out.println("Roll Number : "+roll);
+		System.out.println("Name : "+name);
+		for(int i=0;i<3;i++)
+		{
+			System.out.println("Subject  "+(i+1)+" : "+subject[i]);
+		}
+		
+		System.out.println("\n\n");
+	}
+}
+
+class Tester
+{
+	public static void main(String s[])
+	{
+		int index=1;
+		Student s1=new Student(101,"Anil");
+		Student s2=new Student(102,"Pooja");
+		s1.display();
+		s2.display();
+		Student.setSubject(index,"Social Science");
+		System.out.println("changed subject "+Student.getSubject(index));
+		System.out.println("\n\n");
+		s1.display();
+		s2.display();
+
+	}
+}
+
+	
+
+// static demo for autogeneration of values
+
+class Student
+{
+	private int roll;
+	private String name;
+	private static String[] subject;
+	private static int counter=111; 
+	
+	static
+	{
+		subject=new String[]{"Mathematics","Science","English"};
+	}
+
+	public Student(String name)
+	{
+		this.roll=Student.counter++;
+		this.name=name;
+		 
+	}
+
+	public int getRoll(){return roll;}
+	 
+	public String getName(){return name;}
+	public void setName(String name){this.name=name;}
+
+	public static String getSubject(int index){return subject[index];}
+	public static void setSubject(int index,String subject){Student.subject[index]=subject;}
+
+	public void display()
+	{
+		System.out.println("Roll Number : "+roll);
+		System.out.println("Name : "+name);
+		for(int i=0;i<3;i++)
+		{
+			System.out.println("Subject  "+(i+1)+" : "+subject[i]);
+		}
+		
+		System.out.println("\n\n");
+	}
+}
+
+class Tester
+{
+	public static void main(String s[])
+	{
+		int index=1;
+		Student s1=new Student("Anil");
+		Student s2=new Student("Pooja");
+		Student s3=new Student("Rani");
+		Student s4=new Student("Pavan");
+		s1.display();
+		s2.display();
+		s3.display();
+		s4.display();
+
+		 
+
+	}
+}
+------------------------------------------------------------------------------------------------
+Q We have seen how we can create an array of String objects. Is it possible to create objects for the userdefined classes like Employee/Student/Book etc?
+Ans Yes .
+
+
+ public class Employee {
+   private int id;
+   private String name;
+   private String cityNames[];
+
+   // setters/getters
+ }
+
+ public class EmployeeMain {
+   public static void main(String args[]) {
+
+  }
+}
+------------------------------------------------------------------------------------
+Enter the details for two Employees 
+
+ public class Employee {
+   private int id;
+   private String name;
+   private String cityNames[];
+
+   // setters/getters
+ }
+
+ public class EmployeeMain {
+   public static void main(String args[]) {
+    Employee emp1=new Employee();
+    Employee emp2=new Employee();
+  }
+}
+----------------------------------------------------------------------------------------------
+
+ public class Employee {
+   private int id;
+   private String name;
+   private String cityNames[];
+
+   // setters/getters
+ }
+
+import java.util.Scanner;
+
+public class EmployeeMain {
+   public static void main(String args[]) {
+   Employee employees[]=new Employee[2];  // We have created two reference variables to store two objects
+   Scanner scan=new Scanner(System.in);
+   String cityNames[]=new String[2];
+   // of employee class 
+   // int num[]=new int[2];
+   // String str[]=new String[2];
+   for(int i=0;i<employees.length;i++)
+   {
+	   System.out.println("Enter the id for the employee");
+	   //int id=scan.nextInt();
+	   // employees[i].setId(id);
+	   employees[i].setId(scan.nextInt());
+	  
+	   System.out.println("Enter the name");
+	   employees[i].setName(scan.next());
+	   for(int j=0;j<cityNames.length;j++)
+	   {
+		   System.out.println("Enter the city name");
+		   cityNames[j]=scan.next();
+	   }
+       employees[i].setCityNames(cityNames);
+   
+   }
+   
+  
+  }
+}
+
+
+[ Enter the id for the employee
+1
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Employee.setId(int)" because "employees[i]" is null
+	at EmployeeMain.main(EmployeeMain.java:16)
+]
+-----------------------------------------------------------
+The correct code:----
+
+public class Employee {
+   private int id;
+   private String name;
+   private String cityNames[];
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String[] getCityNames() {
+	return cityNames;
+}
+public void setCityNames(String[] cityNames) {
+	this.cityNames = cityNames;
+}
+
+   // setters/getters
+ }
+
+
+import java.util.Scanner;
+
+public class EmployeeMain {
+   public static void main(String args[]) {
+   Employee employees[]=new Employee[2];  // We have created two reference variables to store two objects
+   Scanner scan=new Scanner(System.in);
+   String cityNames[]=new String[2];
+   // of employee class 
+   // int num[]=new int[2];
+   // String str[]=new String[2];
+   for(int i=0;i<employees.length;i++)
+   {
+	   employees[i]=new Employee();
+	   System.out.println("Enter the id for the employee");
+	   //int id=scan.nextInt();
+	   // employees[i].setId(id);
+	   employees[i].setId(scan.nextInt());
+	  
+	   System.out.println("Enter the name");
+	   employees[i].setName(scan.next());
+	   for(int j=0;j<cityNames.length;j++)
+	   {
+		   System.out.println("Enter the city name");
+		   cityNames[j]=scan.next();
+	   }
+       employees[i].setCityNames(cityNames);
+   
+   }
+   for(Employee emp : employees)
+   {
+	   System.out.println(emp.getId());
+	   System.out.println(emp.getName());
+	   //System.out.println(emp.getCityNames());
+       cityNames=emp.getCityNames();
+       for(String cityName : cityNames)
+       {
+    	   System.out.println(cityName);
+       }
+   }
+   
+   
+   
+  
+  }
+}
+
+
+-------------------------------------------------------------
+Student class with 2 student objects, subjects will be same for all the 
+students. make use of constructors,setters and getters and static method/static
+members wherever required. Add a method called calculateAverage. which will
+display the average score for the 3 subjects. 
+
+
+public class Student {
+ private int roll;
+ private String name;
+ private static String subjects[];
+ private int marks[];
+
+static {
+/*   subjects=new String[3]{"English","Maths",Science"}; // Compilation error because we cannot provide the size for the array , if we are initialising it at the same time. */
+  /* subjects=new String[3];
+  subjects[0]="English";
+  subjects[1]="Maths";
+  subjects[2]="Science";
+  The above 4 lines are correct for declaring and initialising */
+  subjects[]=new String[]{"English","Maths","Science"}'
+  /* The above line is correct for declaring and initialising the String array. */
+
+  }
+
+  // setters/getters methods
+
+  void averageCalculate(){
+
+   }
+
+}
+
+import java.util.Scanner;
+
+public class StudentMain{
+   public static void main(String args[]){
+    Student students[]=new Student[2];
+    Scanner scan=new Scanner(System.in);
+   
+
+ }
+}
+
+Where we find the difference between instance variables, static variables and local variables.
+
+---------------------------------------------------------------------------------------------------------------Aggregation which is also known as Has-a relationship. 
+
+
+Department is having a Manager.
+public class Employee1{
+private String empName;
+private String empId;
+private long contactNo;
+private String address;
+public String getEmpName() {
+	return empName;
+}
+public void setEmpName(String empName) {
+	this.empName = empName;
+}
+public String getEmpId() {
+	return empId;
+}
+public void setEmpId(String empId) {
+	this.empId = empId;
+}
+public long getContactNo() {
+	return contactNo;
+}
+public void setContactNo(long contactNo) {
+	this.contactNo = contactNo;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+
+//setters/getters
+
+}
+
+public class Department {
+private int deptId;
+private String deptName;
+private Employee1 manager;
+public int getDeptId() {
+	return deptId;
+}
+public void setDeptId(int deptId) {
+	this.deptId = deptId;
+}
+public String getDeptName() {
+	return deptName;
+}
+public void setDeptName(String deptName) {
+	this.deptName = deptName;
+}
+public Employee1 getManager() {
+	return manager;
+}
+public void setManager(Employee1 manager) {
+	this.manager = manager;
+}
+
+//setters/getters
+
+}
+
+public class EmployeeDepartmentMain1 {
+   public static void main(String args[]){
+    Employee1 employee=new Employee1();
+    Department dept=new Department();
+    employee.setEmpId("E0001");
+    employee.setEmpName("Gajendra");
+    employee.setContactNo(9834533441L);
+    employee.setAddress("A/122 Netaji Nagar Delhi");
+    dept.setDeptId(1);
+    dept.setDeptName("stores");
+    dept.setManager(employee);
+    System.out.println(dept.getDeptId());
+    System.out.println(dept.getDeptName());
+    System.out.println(dept.getManager()); // You wont be able to read the employeeDetails Employee1@cac736f
+    employee=dept.getManager();
+    System.out.println(employee.getEmpId());
+    System.out.println(employee.getEmpName());
+    System.out.println(employee.getContactNo());
+    System.out.println(employee.getAddress());
+   }
+}  
+----------------------------------------------------------------------------------------  
+Design a class Person with instance variables age,name and address. Name will be a class with firstName,
+middleName and lastName. Address will be a class with hno, streetName, locality, city, State.
+public class Name {
+  private String firstName;
+  private String middleName;
+  private String lastName;
+  
+  // setters/getters
+
+}
+public class Address{
+  private String hno; // A/22
+  prvate String streetName;
+  private String locality;
+  private String city;
+  // setters/getters
+}
+public class Person  {
+  private int age;
+  private Name name;
+  private Address address;
+ // setters/getters
+}
+
+public class PersonMain {
+   public static void main(String args[]) {
+
+   }
+}
+  
+---------------------------------------------------------------------------------------------------
+A person can have 2 addresses. 
+public class Name1 {
+  private String firstName;
+  private String middleName;
+  private String lastName;
+  
+  // setters/getters
+
+}
+
+
+
+public class Person1  {
+  private int age;
+  private Name1 name;
+  private Address1 address[];
+ // setters/getters
+}
+
+public class Address1{
+  private String hno; // A/22
+  prvate String streetName;
+  private String locality;
+  private String city;
+  // setters/getters
+}
+
+
+public class PersonMain1 {
+   public static void main(String args[]) {
+      Address1 address[]=new Address1[2];
+      Person1 person=new Person1();
+      Name1 name=new Name1();
+      address[0]=new Address1();
+      address[0].setHno("A/22");
+      address[0].setStreetName("Park Street");
+      address[0].setLocality("Central Kolkata");
+      address[0].setCity("Kolkata");
+      address[1]=new Address1();
+      address[1].setHno("111");
+      address[1].setStreetName("Jawahar Street");
+      address[1].setLocality("Hind market");
+      address[1].setCity("Srinagar");
+      name.setFirstName("Raman");
+      name.setMiddleName("Kumar");
+      name.setLastName("Verma");
+      person.setAge(20);
+      person.setName(name);
+      person.setAddress(address);
+      System.out.println("The details");
+      System.out.println(person.getAge());
+      name=person.getName();
+      System.out.println(name.getFirstName());
+      System.out.println(name.getMiddleName());
+      System.out.println(name.getLastName());
+      address=person.getAddress();
+      for(Address add : address){
+        System.out.println(add.getHno());
+        System.out.println(add.getStreetName());
+        System.out.println(add.getLocality());
+        System.out.println(add.getCity());
+       }
+   }
+ }
+ ---------------------------------------------------------------------------------
+     
+ public class PersonMain1b {
+   public static void main(String args[]) {
+      
+      Address1 address[]=new Address1[2];
+      Person1 person=new Person1();
+      Name1 name=new Name1();
+      String addressDetails1[][]={ {"A/122","Park Street","Central Kolkata","Kolkata"},
+                                   {"111","Jawahar Street","Hind Market","Srinagar"} };  
+                            
+      for(int i=0;i<address.length;i++)
+       {
+          address[i]=new Address1();
+          address[i].setHno(addressDetails[i][0]);
+          address[i].setStreetName(adressDetails[i][1]);
+          address[i].setLocality(addressDetails[i][2]);
+          address[i].setCity(addressDetails[i][3]);
+      }
+   
+      name.setFirstName("Raman");
+      name.setMiddleName("Kumar");
+      name.setLastName("Verma");
+      person.setAge(20);
+      person.setName(name);
+      person.setAddress(address);
+      System.out.println("The details");
+      System.out.println(person.getAge());
+      name=person.getName();
+      System.out.println(name.getFirstName());
+      System.out.println(name.getMiddleName());
+      System.out.println(name.getLastName());
+      address=person.getAddress();
+      for(Address add : address){
+        System.out.println(add.getHno());
+        System.out.println(add.getStreetName());
+        System.out.println(add.getLocality());
+        System.out.println(add.getCity());
+       }
+   }
+ }
+---------------------------------------------------------------------------------------------------------------
+A person can have 2 addresses. We want to work with the details of 2 Persons.
+
+   Person2 persons[]=new Person2[2];
+---------------------------------------------------------------------------------------------------------------
+
+public class Author {
+   private String name;
+   private Address address;
+
+}
+
+public class Book{
+   private int id;
+   private String title;
+   private String subject;
+   private String language;
+   private Author author;
+}
+public class Address{
+  private String buildingNo;
+  private String streetName;
+  private String locality;
+  private String city;
+  private String country;
+ }
+
+
+
+public class Library {
+    private String name;
+    private String Address;
+    private Book books[];
+
+}
+
+
+public class LibraryMain{
+  public static void main(String args[]){
+
+  }
+} 
+------------------------------------------------------------------------------------------------------------
+public class Appointment{
+  private int id;
+  private String date;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getDate() {
+	return date;
+}
+public void setDate(String date) {
+	this.date = date;
+}
+  
+  
+}
+
+public class Patient {
+  private int age;
+  private String name;
+  private String gender;
+  private Appointment appointment;
+}
+
+The above relationship is has a relationship between Patient and Appointment.
+But that is not the correct approach of Patient having has a relationship
+with the appointment
+
+It can have use a relationship
+
+public class Patient {
+  private int age;
+  private String name;
+  private String gender;
+ 
+   public void makeAppointment(Appointment app){
+      Appointment appo=app;
+      appo.setDate("11-Jun-2022");
+      
+      
+   }
+
+public int getAge() {
+	return age;
+}
+
+public void setAge(int age) {
+	this.age = age;
+}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public String getGender() {
+	return gender;
+}
+
+public void setGender(String gender) {
+	this.gender = gender;
+}
+   
+   
+}
+
+
+public class PatientMain {
+  public static void main(String args[]){
+   Appointment appointment=new Appointment();
+   appointment.setId(1);
+   System.out.println(appointment.getId());    // 1
+   System.out.println(appointment.getDate());  // null
+
+   Patient patient=new Patient();
+   patient.setAge(30);
+   patient.setName("Romesh");
+   patient.setGender("Male");
+   patient.makeAppointment(appointment);
+   System.out.println("the details");
+   System.out.println(patient.getAge());
+   System.out.println(patient.getName());
+   System.out.println(appointment.getId());  //1
+   System.out.println(appointment.getDate()); //11-Jun-2022
+ }
+}
+------------------------------------------------------------------------------------------------------------
+We have an Item class. Item class is with id , itemname , unitprice.
+We have a customer class with customerid,customername and mobilenumber.
+the class Order will have itemList as an attribute.  
+We have a Bill class with billid and a method called generatebill which will be passed with a customer's details and Itemlist and it will return the total bill amount ( Considering that we are asking for only one
+item).
+
+public class Item {
+   private int id;
+   private String itemName;
+   private float unitPrice;
+
+   //setters/getters
+}
+
+public class Customer {
+   private String customerId;
+   private String customerName;
+   private long mobileNumber;
+ // setters/getters
+}
+
+public class Order {
+      private int orderId;
+      private Item items[];  // Order and Items are related with HAS-A relationship. Order is having items.
+    // getters/setters
+ }
+
+// Bill class is having uses relationship with Customer and Order because Customer and Order objects are not
+// attribute but they are used in the method generateBill and passed as a parameter
+public class Bill{
+private int billId;
+
+public double generateBill(Customer cust, Order order){
+ double totalPrice;
+}
+
+}
+
+import java.util.Scanner;
+public class Main {
+  public static void main(String args[]){
+  Scanner scan=new Scanner(System.in);
+  int numberOfItems;
+  System.out.println("Enter the number of items");
+  numberOfItems=scan.nextInt();
+  Item items[]=new Items[numberOfItems];
+  Customer customer=new Customer();
+  Order order=new Order();
+  double totalPrice=order.generateBill(customer,order); // The details of
+// Customer should be shown with generateBill method and the details
+// which we need to print is shown in the testcase.
+  System.out.println(totalPrice);
+ }
+}
+  TestCase
+  Enter the number of items
+  2
+  Customer Id C0001
+  Customer Name Ravi
+  OrderId   1
+  Item Details
+  I001 Pen   10
+  I002 Pencil 2
+  Total Price: 12.00
+  
+
+   Item items[]=new Item[2];
+   | null   |  null  |
+ 
+   int id[]={1,2};
+   String itemName[]={"Burger","Pizza"};
+   float price[]={150.50f,350};
+
+ 
+   for(int i=0;i<items.length;i++){
+    items[i]=new Item();
+    items[i].setId(id[i]);
+    items[i].setItemName(itemName[i]);
+    items[i].setPrice(price[i]);
+   }
+
+
+---------------------------------------------------------------------------------------------------------
+Employee is having two Addresses.
+
+  public class Address{
+   private int hno;
+   private String streetName;
+   private String cityName;
+
+    public Address(int hno,String streetName, String cityName){
+    this.hno=hno;
+    this.streetName=streetName;
+    this.cityName=cityName;
+    }
+   
+ }
+
+  public class Employee{
+   private int id;
+   private String name;
+   private Address addresses[];
+   
+    public Employee(int id,String name, Address addresses[]){
+     this.id=id;
+     this.name=name;
+     this.addresses=addresses;
+    } 
+
+  }
+
+
+  public class EmployeeMain{
+   public static void main(String args[]){
+     Address address1=new Address(1,"Netaji Marg","Delhi");
+     Address address2=new Address(2,"Ashok Nagar","Mumbai");
+     Address addresses[]={address1,address2};
+     Employee employee=new Employee(1,"Ram",addresses);
+   }
+  }
+ ---------------------------------------------------------------------------------------------------------
+ 
+  public class Customer {
+
+
+
+  }
+
+
+  public class Address {
+
+
+  }
+
+ public class Main {
+   public static void main(String args[]) {
+    Address address=new Address();
+    Customer customer=new Customer();
+    address.setHno();
+    address.setCity():
+    customer.setId();
+    customer.setFirstName();
+    customer.setAddress(address);
+    System.out.println("The details");
+    int id=customer.getId();
+    String firstName=customer.getFirstName();
+    address=customer.getAddress();
+    int hno=address.getHno();
+    System.out.println(hno);
+    String city=address.getCity();
+    System.out.println(city);
+   }
+}
+
+
+
+** inheritance
+
+- reusing member variables and methods from existing class while designing new class.
+- non private member variables and methods of super-class are directly accessible in sub-class
+- private member variables  are accessible through getter ans setter methods.
+- to inherit a class extends keyword is used as fllows
+	class subclassname extends superclassname{
+
+
+- generally object of sub-class is created and used to implement the design.
+- when object of sub-class is created constructor of sub-class will implicitly call default(parameterless) constructor of super class and then statements in sub-class constructor are executed.
+- parameterized constructor of super-class called be invoked with super keyword as follows
+	super(appropriate parameter list);
+	it should be the first statement in the sub-class constructor.
+- other way of initializing instance variables of super-class is using getter and setter methods in the sub-class comstructor.
+-or in super-class use protected access modifier for instance variables which can be directly accessed 	in sub-class constructor and methods.
+
+- in OOPs many types of inheritance are used like single inheritance, multilevel inheritance, hierarchical inheritance, multiple inheritance, hybrid/diamondshaped inheritance
+- JAVA supports only single inheritance, multilevel inheritance, hierarchical inheritance.
+
+
+
+* Inheritance is for reusability of code.
+* extends keyword is used for inheritance.
+* private members of the Parent class are not inherited.
+* default/protected/public members are inherited.
+* With the object of child class we can access the public, protected and default member of the parent class.
+
+  public class Parent1{
+ 
+   public void displayParent(){
+   System.out.println("I am a method in the Parent class");
+   }
+ }
+
+ public class Child1 extends Parent1{
+   public void displayChild(){
+    System.out.println("I am a method in the Child class");
+   }
+}
+
+  public class InheritDemo1{
+    public static void main(String args[]){
+      Parent1 parent=new Parent1();
+      parent.displayParent();
+      //parent.displayChild();
+      Child1 child=new Child1();
+      child.displayParent();
+      child.displayChild();
+     }
+  }
+ 
+ // Parent class object cannot access child class member whereas child class object can access the parent class members( condition 
+is the members should not be private).
+
+------------------------------------------------------------------------------------------------------------------------------------
+Constructor call in inheritance.
+* We have two types of constructors
+  ** default or parameterless
+  ** parameterized constructor
+
+// parameterless constructor call
+  public class Parent2 {
+    private int num1;
+   
+    public int getNum1(){
+     return num1;
+    }
+ }
+
+  public class Child2 extends Parent2 {
+    private int num2;
+    
+    public int getNum2(){
+     return num2;      
+    }
+  }
+
+   public class ParentChildMain2{
+    public static void main(String args[]){
+       Child2 child=new Child2();
+       child.getNum1();   // 0
+       child.getNum2();   //0
+     }
+   }
+
+ // In the above example we have not defined any setter methods for num1 and num2 and we have also not mentioned any 
+ // constructor . So the default constructor is provided during the compilation and that initialised num1 and num2 with 0.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+ public class Parent3 {
+    private int num1;
+   
+     public Parent3(){
+       num1=20;
+       System.out.println("I am the parameterless constructor of parent");
+   }
+    public int getNum1(){
+     return num1;
+    }
+ }
+
+  public class Child3 extends Parent3 {
+    private int num2;
+
+    public Child3() {
+      // super();  // this is called implicitly and meant for invoking the parent class parameterless constructor
+       num2=200;
+       System.out.println("I am the parameterless constructor of the Child class");
+      }
+
+    public int getNum2(){
+     return num2;      
+    }
+  }
+
+ public class ParentChildMain3{
+    public static void main(String args[]){
+       Child3 child=new Child3();
+       System.out.println(child.getNum1());   // 20
+       System.out.println(child.getNum2());   // 200
+     }
+   }
+
+/* 
+I am the parameterless constructor of parent
+I am the parameterless constructor of the Child class
+20
+200
+*/
+
+By now, you have learnt that the derived classes inherit from the base class. You will now see how the child class object is created. As you all know, constructors are invoked while creating objects. When a child class object is created, the child class constructor invokes the parent class constructor before executing any statement present in the child constructor.
+------------------------------------------------------------------------------------------------------------------
+Parameterized constructor
+// super is used represent the immediate parent class. So in our example
+// Parent4 is the immediate parent class of Child4
+
+ public class Parent4 {
+    private int num1;
+   
+     public Parent4(int num1){
+       this.num1=num1;
+       System.out.println("I am the parameterized constructor of parent");
+   }
+    public int getNum1(){
+     return num1;
+    }
+ }
+
+  public class Child4 extends Parent4 {
+    private int num2;
+
+    public Child4(int num1,int num2) {
+       super(num1); // we have to explicitly invoke the parent class parameterized constructor  
+       this.num2=num2;
+       System.out.println("I am the parameterized constructor of the Child class");
+      }
+
+    public int getNum2(){
+     return num2;      
+    }
+  }
+
+ public class ParentChildMain4{
+    public static void main(String args[]){
+       Child4 child=new Child4(100,200);
+       System.out.println(child.getNum1());   // 100
+       System.out.println(child.getNum2());   // 200
+     }
+   }
+
+---------------------------------------
+From the parameterized constructor of the child class if we dont make a call to the
+parent class parameterized constructor, what will happen?
+
+
+
+public class Parent5{
+    private int num1;
+   
+     public Parent5(int num1){
+       this.num1=num1;
+       System.out.println("I am the parameterized constructor of parent");
+   }
+    public int getNum1(){
+     return num1;
+    }
+ }
+
+  public class Child5 extends Parent5 {
+    private int num2;
+
+    public Child5(int num1,int num2) {
+      // super(num1); // we have to explicitly invoke the parent class parameterized constructor  
+      // If we are not writing super(num1) explicitly , super() is carried out implicitly
+       this.num2=num2;
+       System.out.println("I am the parameterized constructor of the Child class");
+      }
+
+    public int getNum2(){
+     return num2;      
+    }
+  }
+
+ public class ParentChildMain5{
+    public static void main(String args[]){
+       Child5 child=new Child5(100,200);
+       System.out.println(child.getNum1());   // 100
+       System.out.println(child.getNum2());   // 200
+     }
+   }
+
+// The above code will show compilation error as the parameterized constructor is
+// trying to invoke the default constructor but we have not defined any default or
+// parameterless constructor in the parent class.
+
+Q So is the default constructor is not provided implicitly during compilation?
+A Yes if non of the constructor is defined in the class but in the above example
+we have one parameterized constructor in the parent class. That is the reason
+compiler wont provide any parameterless constructor . We have to explicitly write
+the parameterless constructor.
+
+
+
+public class Parent6{
+    private int num1;
+    
+     public Parent6(){
+      num1=2000;
+      System.out.println("I am the parameterless constructor of the Parent class");
+     }
+
+     public Parent6(int num1){
+       this.num1=num1;
+       System.out.println("I am the parameterized constructor of parent");
+   }
+    public int getNum1(){
+     return num1;
+    }
+ }
+
+  public class Child6 extends Parent6 {
+    private int num2;
+
+    public Child6(int num1,int num2) {
+      // super(num1); // we have to explicitly invoke the parent class parameterized constructor  
+      // If we are not writing super(num1) explicitly , super() is carried out implicitly
+       this.num2=num2;
+       System.out.println("I am the parameterized constructor of the Child class");
+      }
+
+    public int getNum2(){
+     return num2;      
+    }
+  }
+
+ public class ParentChildMain6{
+    public static void main(String args[]){
+       Child6 child=new Child6(100,200);
+       System.out.println(child.getNum1());   // 2000
+       System.out.println(child.getNum2());   // 200
+     }
+   }
+
+// So calling or invoking the Parent class constructor should be the first line
+// in the child class constructor otherwise it is a compilation error
+
+
+   public Child(int num1, int num2){
+   this.num2=num2;
+   super(num1);
+   }
+  // So the above snippet shows that we cannot invoke base class constructor at any
+other point of time. It has to be called in the first line of the Child class constructor.
+The above code is with error.
+
+---------------------------------
+public class Employee{}
+public class Educator{}
+
+What we cannot write....
+
+ public class Manager extends Employee,Educator{}
+// We dont have the concept of a java class extending multiple classes or inheriting 
+multiple classes.
+--------------------------------------------------------------------------
+//inheritance demo
+
+class Student
+{
+	private int roll;
+	private String name;
+	private int marks1;
+	private  int marks2;
+	protected float totalMarks;
+	private static int counter=1;
+	public Student(){}
+	public Student(String name,int marks1,int marks2)
+	{
+		this.roll=Student.counter++;
+		this.name=name;
+		this.marks1=marks1;
+		this.marks2=marks2;
+		this.totalMarks=marks1+marks2;
+	}
+	public int getRoll(){return roll;}
+	public String getName(){return name;}
+	public void setName(String name){this.name=name;}
+	public float getTotalMarks(){return totalMarks;}
+	public void setTotalMarks(Float marks){this.totalMarks=marks;}
+
+	public void displayStudentInfo()
+	{
+		System.out.println("Roll Number : "+roll);
+		System.out.println("Student Name : "+name);
+		System.out.println("Marks1 : "+marks1);
+		System.out.println("Marks2 : "+marks2);
+		System.out.println("Total Marks : "+totalMarks);
+
+	}
+}
+
+class SportStudent extends Student
+{
+	private String sportName;
+	
+	public SportStudent(String name,int marks1,int marks2,String sportName)
+	{
+		super(name,marks1,marks2);
+		this.sportName=sportName;
+		this.totalMarks=this.totalMarks+10;
+		//setTotalMarks(getTotalMarks()+10);
+
+	}
+	public String getSportName(){return sportName;}
+	public void setSportName(String sportName){this.sportName=sportName;}
+}
+
+class Tester
+{
+	public static void main(String s[])
+	{
+		SportStudent ss1=new SportStudent("Ashish",70,80,"FootBall");
+		ss1.displayStudentInfo();
+		System.out.println("Sports Name : "+ss1.getSportName());
+	}
+}
+-----------------------------------------------------------------------------------------------------
+Inheritance
+  public class Base1 {
+    private int num;
+       
+    public void setBase(int num){
+      this.num=num;
+    }
+    private void disp(){
+      System.out.println("The private method");
+     }
+    public void dispBase(){
+      System.out.println(num);
+    }
+
+ public class Derived1 extends Base1 {
+    private int num2;
+   /* In the following method in setDerived method we are trying to access the private '
+     member of the base class and trying to set the value as 10 */
+    public void setDerived(){
+        //num=10; private members of the base class is not accessible by the derived class
+        num2=20;
+    }          
+   
+   public void dispDerived(){
+     disp();  // So this line will show error because disp() is the
+     // private member of the base class
+     dispBase(); // Yes we can access dispBase as it is a public
+     // member of the base class. We dont require object of the
+     // base class to access it from the derived class.
+    //System.out.println(num);
+    System.out.println(num2);
+   }
+ }
+
+  public class InheritDemo1{
+  {
+  public static void main(String args[])
+  {
+       Base1 base=new Base1();
+       base.setBase(10);
+       base.dispBase();    //10
+       base.disp();
+       Derived1 derived=new Derived1();
+       derived.setBase(100);
+       derived.dispBase();    //100
+       derived.setDerived();
+       derived.dispDerived();
+       derived.disp();
+  }
+ }
+-----------------------------------------------------------------------------------------------
+ 
+class Customer {
+	//Parent/Super/Base class
+}
+class RegularCustomer extends Customer {        // RegularCustomer is a Customer
+	//Child/Sub/Derived class
+}
+class Guest extends Customer {                  // Guest is a Customer
+	//Child/Sub/Derived class
+}
+
+In the above example if we want to represent a Customer
+   Customer customer=new Customer();
+If we want to represent RegularCustomer in that case we need to create the
+object of RegularCustomer only.
+  RegularCustomer regularCustomer=new ReegularCustomer();
+------------------------------------------
+class Customer1 {
+	public Customer1() {
+		// 3: Parent constructor will be executed
+		System.out.println("Creating a customer...");
+		// 4: The flow will go back to the child constructor
+	}
+}
+class RegularCustomer1 extends Customer1 {
+	public RegularCustomer1() {
+		// 2: This constructor will then call the parent constructor
+		System.out.println("It is a regular customer!");
+		// 5: The flow will finally come here
+	}
+}
+public class Tester1 {
+	public static void main(String[] args) {
+		RegularCustomer1 regularCustomer = new RegularCustomer1();
+		// 1: This line will be executed first and the flow will go to [2]
+	}
+}
+-----------------------------------------------------------------------
+public class Customer2 {
+	private String customerId;
+	private String customerName;
+
+	public Customer2(String customerId, String customerName) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		System.out.println("I am the base class parameterized constructor");
+	}
+ 
+	public Customer2() {
+		System.out.println("Parent Default Constructor");
+	}
+
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public void displayCustomerDetails() {
+		System.out.println("Displaying customer details \n***************************");
+		System.out.println("Customer Id : " + customerId);
+		System.out.println("Customer Name : " + customerName);
+		System.out.println();
+	}
+}
+
+
+public class RegularCustomer2 extends Customer2 {
+	private float discount;
+	public RegularCustomer2(String custId, String custName) {
+		setCustomerId(custId);
+		setCustomerName(custName);
+		discount = 5.0f;
+		System.out.println("Child class parameterized Constructor");
+	}
+	public float getDiscount() {
+		return discount;
+	}
+	public void setDiscount(float discount) {
+		this.discount = discount;
+	}
+}
+
+public class Tester2 {
+	public static void main(String[] args) {
+		RegularCustomer2 regularCustomer = new RegularCustomer2("C1010",
+				"Johns Kora");
+		regularCustomer.displayCustomerDetails();
+	}
+}
+-----------------------------------------------------------------
+THE PARAMETERIZED CONSTRUCTOR OF SUB CLASS WILL CALL THE PARAMETERLESS CONSTRUCTOR OF THE BASE CLASS
+UNTIL UNLESS THE PARAMETERIZED CONSTRUCTOR OF BASE CLASS IS EXPLICITLY BEING CALLED.THE EXPLICIT CALL
+IS DONE THROUGH SUPER KEYWORD.
+
+public class Customer3 {
+	private String customerId;
+	private String customerName;
+
+	public Customer3(String customerId, String customerName) {
+		this.customerId = customerId;
+		this.customerName = customerName;
+		System.out.println("I am the base class parameterized constructor");
+	}
+ 
+	public Customer3() {
+		System.out.println("Parent Default Constructor");
+	}
+
+	public String getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public void displayCustomerDetails() {
+		System.out.println("Displaying customer details \n***************************");
+		System.out.println("Customer Id : " + customerId);
+		System.out.println("Customer Name : " + customerName);
+		System.out.println();
+	}
+}
+
+
+
+public class RegularCustomer3 extends Customer3 {
+	private float discount;
+	public RegularCustomer3(String custId, String custName) {
+		/*setCustomerId(custId);
+		setCustomerName(custName);*/
+                super(custId,custName);
+		discount = 5.0f;
+		System.out.println("Child Class Parameterized Constructor");
+	}
+	public float getDiscount() {
+		return discount;
+	}
+	public void setDiscount(float discount) {
+		this.discount = discount;
+	}
+}
+
+public class Tester3 {
+	public static void main(String[] args) {
+		RegularCustomer3 regularCustomer = new RegularCustomer3("C1010",
+				"Johns Kora");
+		regularCustomer.displayCustomerDetails();
+	}
+}
+-----------------------------------------------------------------------------------------------
+* Derived class parameterless constructor calls the base class parameterless constructor.
+
+   public class Base2 {
+
+   public Base2(){
+    System.out.println("I am the parameterless or default constructor");
+   }
+  }
+  public class Derived2 extends Base2 {
+   public Derived2(){
+   System.out.println("I am the parameterless or default constructor of the derived class");
+   }
+ }
+ 
+  public class Inherit2{
+    public static void main(String args[]){
+     Derived2 derived=new Derived2();
+    }
+  }
+---------------------------------------------------------------------------------------------
+// Default constructor of the Derived class calls the default constructor of the base class, provided
+during the compilation
+public class Base3 {
+
+ 
+  }
+  public class Derived3 extends Base3 {
+  
+ }
+ 
+  public class Inherit2{
+    public static void main(String args[]){
+     Derived3 derived=new Derived3();
+    }
+  }      
+  }
+--------------------------------------------------------
+// Parameterized constructor of the derived class calls the parameterless constructor of the Base class.
+
+public class Base4 {
+   
+  public Base4(){
+    System.out.println("I am the parameterless constructor of the base");
+  }
+ 
+  }
+  public class Derived4 extends Base4 {
+ 
+    public Derived4(int a,int b){
+     System.out.println("I am the parameterized constructor of the subclass");
+    } 
+ }
+ 
+  public class Inherit4{
+    public static void main(String args[]){
+     Derived4 derived=new Derived4(1,2);
+    }
+  }      
+  }
+-----------------------------------------------------------------------------------------------
+
+// So parameterized constructor of base class needs to be called explicitly with super keyword
+from the constructor of the derived class
+public class Base5 {
+   
+  public Base5(int i){
+    System.out.println("I am the parameter constructor of the base");
+  }
+ 
+  }
+  public class Derived5 extends Base5 {
+     public Derived5(int a,int b){
+     super(a);
+     System.out.println("I am the parameterized constructor of the subclass");
+    } 
+ }
+ 
+  public class Inherit5{
+    public static void main(String args[]){
+     Derived5 derived=new Derived5(1,2);
+    }
+  }      
+  }
+--------------------------------------------------------------------------------
+// Compilation error as Derived class parameterized will call the default/parameterless
+// constructor but as we have Parameterized constructorin the base class so the default constructor is not provided in the base and we have explicitly declare a parameterless constructor in the base class.
+// during the compilation.
+public class Base6 {
+   
+  public Base6(int i){
+    System.out.println("I am the parameter constructor of the base");
+  }
+ 
+  }
+  public class Derived6 extends Base6 {
+     public Derived6(int a,int b){
+     //super(a);
+     System.out.println("I am the parameterized constructor of the subclass");
+    } 
+ }
+ 
+  public class Inherit6{
+    public static void main(String args[]){
+     Derived6 derived=new Derived6(1,2);
+    }
+  }      
+  }
+----------------------------------------------------------------------------------------------------
+public class Numbers{
+  
+  private void add(int a,int b){}
+  private int add(int a,int b){}
+}
+// We have different return type in the above example
+// We don't consider return type to decide whether two or methods
+// are overloaded methods or not
+public class Numbers{
+  
+  private void add(int a,int b){}
+  private int add(float a,float b){}
+}// The above example is of method overloading.
+public class Numbers{
+  
+  private void add(int a,int b){}
+  private int add(int a,int b,int c){}
+}// The above example is of method overloading. 
+
+public class Numbers{
+  
+  private void add(int a,float b){}
+  private int add(float a,int b){}
+}// The above example is of method overloading.
+--------------------------------------------------------------------------------------------------
+String substring(int startIndex)
+String substring(int startIndex, int endIndex)
+------------------------------------------------------------------------------------------------------
+Whenever we are discussing dynamic polymorphism or method overriding we need to have Inheritance with the code.
+
+ class Person{
+    public void disp(){
+    System.out.println("I am the disp method of the base class");
+   }
+ }
+
+ class Employee extends Person {
+  public void disp(){
+    System.out.println("I am the disp method of the derived class");
+   }
+ }
+For method overriding:
+* methods will be having the same name in the Parent class and the Child class.
+* Return type will be same or of covariant type.
+* Number of parameters will be same.
+* The parameter's datatype will be same.
+
+public class Base1 {
+   public int calculate(int a,int b){   // overridden method
+    System.out.println("I am in the base class");
+    return a+b;
+   }
+ }
+
+public class Derived1 extends Base1 {
+  public int calculate(int x, int y){     // overriding method
+    System.out.println("I am the derived class");
+    return x*y;
+  }
+}
+
+
+public class Main1{
+   public static void main(String args[]){
+     Derived1 derived=new Derived1();
+     int res=derived.calculate(4,5);
+     // Derived class calculate method will override
+     // the base class calculate
+     System.out.println(res);
+    }
+  }
+----------------------------------------------------------------------------------------------------
+public class Base2 {
+   private int calculate(int a,int b){   // private method/methods are not overridden
+    System.out.println("I am in the base class");
+    return a+b;
+   }
+ }
+
+public class Derived2 extends Base2 {
+  public int calculate(int x, int y){     
+    System.out.println("I am the derived class");
+    return x*y;
+  }
+}
+
+
+public class Main2{
+   public static void main(String args[]){
+     Derived2 derived=new Derived2();
+     int res=derived.calculate(4,5);
+     System.out.println(res);
+    }
+  }
+------------------------------------------------------------------------------
+The access modifiers from most restricted to least restricted
+private======>default=======>protected=======>public
+When we go for method overriding the overridden method should have access specifier same as
+that of the overridden method or with more scope than the overridden method. The
+below code will show compilation error because the overridden method is having public scope
+where as overriding os having the restricted scope of default.
+public class Base3 {
+   public int calculate(int a,int b){   // private method/methods are not overridden
+    System.out.println("I am in the base class");
+    return a+b;
+   }
+ }
+
+public class Derived3 extends Base3 {
+   int calculate(int x, int y){     
+    System.out.println("I am the derived class");
+    return x*y;
+  }
+}
+--------------------------------------------------------------------
+The below code is fine as the overriding method is having higher scope of accessibility as 
+comparison to the overridden method.
+
+
+public class Base4 {
+    int calculate(int a,int b){   // private method/methods are not overridden
+    System.out.println("I am in the base class");
+    return a+b;
+   }
+ }
+
+public class Derived4 extends Base4 {
+   public int calculate(int x, int y){     
+    System.out.println("I am the derived class");
+    return x*y;
+  }
+}
+
+
+public class Main4{
+   public static void main(String args[]){
+     Derived4 derived=new Derived4();
+     int res=derived.calculate(4,5);
+     System.out.println(res);
+    }
+  }
+----------------------------------------------------------------------------
+
+public class Base5 {
+    int calculate(int a,int b){   // private method/methods are not overridden
+    System.out.println("I am in the base class");
+    return a+b;
+   }
+ }
+
+public class Derived5 extends Base5 {
+   public int calculate(int x, int y){     
+    System.out.println("I am the derived class");
+    return x*y;
+  }
+}
+
+
+public class Main5{
+   public static void main(String args[]){
+     Base5 base=new Base5();
+     int res=base.calculate(4,5);   // The base class calculate method is called
+     Derived5 derived=new Derived5();
+     res=derived.calculate(4,5);    // The derived class calculate method is called
+     System.out.println(res);
+     Base5 base2=new Derived5(); // Reference is of the base type and object is of the derived type
+     res=base2.calculate(10,10);   //In this line the Derived class calculate method is called
+     System.out.println(res);   
+    }
+  }
+-------------------------------------------------------------
+Q How the type conversion and casting takes place in Java for reference type?
+A The classes which are having parent child relationship , with those classes we can implement type
+conversion and type casting.Type casting cannot happen between the classes which are not related with
+parent child relationship.
+
+   public class Computer{
+
+   }
+
+   public class Laptop extends Computer {
+
+   }
+
+   public class ComputerMain{
+     public static void main(String args[]){
+       Computer computer=null;
+       computer=new Laptop();  // The Computer and Laptop are having parent child relationship
+     }
+  }
+
+-----------------------------------------------------------------------------------
+
+public class Computer{
+
+   }
+
+   public class Laptop extends Computer {
+
+   }
+
+   public class ComputerMain{
+     public static void main(String args[]){
+       Computer computer=null; // we are initialising the reference variable with null which means currently the reference variable is not storing the address of any object.
+       computer=new Laptop();  // The Computer and Laptop are having parent child relationship
+     }
+  }
+----------------------------------------------------------------------------------------------------
+public class Computer1{
+    public void processing(){
+     System.out.println("Computer will do processing");
+    }
+   }
+
+   public class Laptop1 extends Computer1 {
+   public void processing(){
+     System.out.println("I am the Laptop processor");
+    }
+   }
+
+   public class ComputerMain1{
+     public static void main(String args[]){
+       Computer1 computer=null; // we are initialising the reference variable with null which means currently the reference variable is not storing the address of any object.
+       computer=new Laptop1();  // The Computer and Laptop are having parent child relationship
+       computer.processing(); // It shows I am Laptop processor
+       // The above execution is because of dynamic polymorphism because object is created during the
+      // runtime and when we call processing method after the object creation, first it checks whether
+      // we have processing method in the base class, if the method declaration is present in the
+      // base class, then it checks the derived class as the object is of Derived type. Now if it
+     // is getting the method in the derived class, that derived class method is invoked.
+     }
+  }
+
+Q What will happen if we have a method in the base class but we dont have a similar method in the 
+  Derived class.
+A In that case the base class method will be called.
+
+public class Computer2{
+    public void processing(){
+     System.out.println("Computer will do processing");
+    }
+   }
+
+   public class Laptop2 extends Computer2 {
+  
+   }
+
+   public class ComputerMain2{
+     public static void main(String args[]){
+       Computer2 computer=null; // we are initialising the reference variable with null which means currently the reference variable is not storing the address of any object.
+       computer=new Laptop2();  // The Computer and Laptop are having parent child relationship
+       computer.processing(); // Computer will do processing
+       // The above execution is because of dynamic polymorphism because object is created during the
+      // runtime and when we call processing method after the object creation, first it checks whether
+      // we have processing method in the base class, if the method declaration is present in the
+      // base class, then it checks the derived class as the object is of Derived type. Now if it
+     // is getting the method in the derived class, that derived class method is invoked.
+     }
+  }
+---------------------------------------------------------------------------------------------------
+Q If we have a method which is only in the subclass but we dont have a method in the base class.
+Can we call that method with the reference of base class and object of derived class?
+A No
+
+public class Computer3{
+   
+   }
+
+   public class Laptop3 extends Computer3 {
+     public void processing(){
+     System.out.println("I am the processor of laptop");
+    }
+   }
+
+   public class ComputerMain3{
+     public static void main(String args[]){
+       Computer3 computer=null; // we are initialising the reference variable with null which means currently the reference variable is not storing the address of any object.
+       computer=new Laptop3();  // The Computer and Laptop are having parent child relationship
+       computer.processing();   // In this line we will have compilation error as the method is 
+      // not declared in the Parent class
+     }
+  }
+-----------------------------------------------------------------------------
+Q Do we have any solution for the above challenge?
+A Yes . With type casting.
+
+public class Computer4{
+   
+   }
+
+   public class Laptop4 extends Computer4 {
+     public void processing(){
+     System.out.println("I am the processor of laptop");
+    }
+   }
+
+   public class ComputerMain4{
+     public static void main(String args[]){
+       Computer4 computer=null; // we are initialising the reference variable with null which means currently the reference variable is not storing the address of any object.
+       computer=new Laptop4();  // The Computer and Laptop are having parent child relationship
+       Laptop4 laptop=(Laptop)computer; // Casting
+       //((Laptop)computer).processing(); 
+      laptop.processing();   
+     }
+  }
+
+[In reference type casting is always preceeded by type conversion]
+It is similar to pouring the content of smaller jug into the bigger jug and again pouring the 
+content from bigger jug back to the smaller jug.
+-------------------------------------------------------------------------------------
+// For the following code we wont be getting any compilation error but we will get Runtime error
+Exception in thread "main" java.lang.ClassCastException: class Computer5 cannot be cast to class Laptop5 (Computer5 and Laptop5 are in unnamed module of loader 'app')
+	at ComputerMain5.main(ComputerMain5.java:4)
+
+To decide type conversion we have to check is relation. Example
+Laptop is a Computer        Computer=Laptop ( conversion) 
+Is a relationship from down to up.
+public class Computer5{
+   
+   }
+
+   public class Laptop5 extends Computer5 {
+     public void processing(){
+     System.out.println("I am the processor of laptop");
+    }
+   }
+
+   public class ComputerMain5{
+     public static void main(String args[]){
+       Computer5 computer=new Computer5();
+       Laptop5 laptop=(Laptop5)computer; 
+       laptop.processing();   
+     }
+  }
+---------------------------------------------
+Computer computer=new Computer();
+Computer computer2=computer;
+---------------------------------------------------------------------------------------
+
+public class Base6 {
+   public void disp(){
+    System.out.println("I am the base class display method");
+   }
+}
+
+public class Derived6 extends Base6{
+  public void disp() {
+    super.disp(); // super is a keyword which is used to represent the immediate parent class
+    System.out.println("I am the derived class display method");
+   }
+}
+
+public class Main6{
+   public static void main(String args[]) {
+      Derived6 derived=new Derived6();
+      derived.disp();
+   }
+ }
+-----------------------------------
+
+  public class BaseA {
+    public void disp(){
+   
+    }
+  }
+ 
+ public class BaseB extends BaseA {
+   public void disp(){
+   super.disp();
+  }
+}
+
+  public class Derived extends BaseB {
+   public void disp() {
+   super.super.disp();  // This way is not correct
+   super.disp();
+  }
+ }
+-----------------------------------------------------------------------------------------
+All the classes in Java ( Pre defined or user defined ) are subclasses of Object class.
+So when we create our own class , that is also inherited class. In the following example
+though we are not writing Employee extends Object, then also Employee is a subclass of Object.
+  
+  public class Employee {}
+---------------------------------------------------------------------------------------------
+  public class Person {}
+  public class Employee extends Person{}
+  
+   Object
+     |
+     |
+     |
+   Person
+     |
+     |
+     |
+  Employee
+As we dont have the concept of multiple inheritance but we have multi level inheritance. The
+above example is of multi level inheritance. So in the example above Person is extending Object
+and Employee is extending Person. So Employee is inheriting Object via Person class.
+   A    B
+     C
+public class A{}
+public class B{}
+public class C extends A,B {}  // we cannot have multiple inheritance in Java through classes.		
+---------------------------------------------------------------------------------------------------------------
+	
+    
+  
+
+
+
+
+	
+  
+
+
+
+
+  
+
