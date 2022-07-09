@@ -1169,7 +1169,7 @@ public class UserInputDemo1 {
     float score;
     System.out.println("Enter the number");
     num=scanner.nextInt();
-    System.out/println("Enter the name");
+    System.out.println("Enter the name");
     name=scanner.next();  // For String
     System.out.println("Enter the score");
     score=scanner.nextFloat();
