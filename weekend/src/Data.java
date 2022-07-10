@@ -1,0 +1,20 @@
+public class Data {
+   private int num;
+   private String name;
+   private boolean b;
+   private float f;
+
+  public void displayData(){
+   System.out.println(num);
+   System.out.println(name);
+   System.out.println(b);
+   System.out.println(f);
+  }
+
+  public void setData(int n1, String name1, boolean b1, float f1){
+   num=n1; 
+   name=name1;
+   b=b1;
+   f=f1;
+ }
+}

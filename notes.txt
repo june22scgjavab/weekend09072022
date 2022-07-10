@@ -1305,7 +1305,7 @@ public class BreakWithLoop {
    }
  }
 
-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
 Enter 10 numbers from user and count the number of even numbers
 
 import java.util.Scanner;
@@ -1330,9 +1330,9 @@ public class ContinueWithLoop {
  }   // end of main
 }   // end of class
 
---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
 
-class Customer{
+class CustomerDetails1{
    public static void main(String[] args){
     int id;
     String name;
@@ -1349,13 +1349,28 @@ class Customer{
    }
  }
 --------------------------------------------------------------------------------------
-class Customer{
+class CustomerDetails2{
    public static void main(String[] args){
     // id,name,address are local variable to the main method. 
     int id=1;
     String name="Rohit";
     String address="A/122 Radha Nagar, Delhi";
     String foodOrdered="Pizza";
+    System.out.println(id);
+    System.out.println(name);
+    System.out.println(address);
+    System.out.println(foodOrdered);
+   }
+ }
+
+
+class CustomerDetails3{
+   public static void main(String[] args){
+    // id,name,address are local variable to the main method. 
+    int id;
+    String name;
+    String address;
+    String foodOrdered;
     System.out.println(id);
     System.out.println(name);
     System.out.println(address);
@@ -1374,7 +1389,7 @@ Customer cust=65430;
 // new Customer() in RHS is actually creating a new object during the runtime and the address
 // of the newly created object is stored in the reference variable cust. 
 ----------------------------------------------------------------------------------------
-class CustomerDetails{
+class CustomerDetails4{
 // id, name,address,foodOrdered are instance variables, member variables, attributes of Customer //class. To access these attributes we require the objectname.attributename.
     int id;
     String name;
@@ -1382,8 +1397,8 @@ class CustomerDetails{
     String foodOrdered;
 
     public static void main(String args[]) {
-     CustomerDetails customer=new CustomerDetails();
-     CustomerDetails customer2=new CustomerDetails();
+     CustomerDetails4 customer=new CustomerDetails4();
+     CustomerDetails4 customer2=new CustomerDetails4();
      customer.id=1;
      customer.name="Ravi";
      customer.address="A/15 Netaji Nagar, Kolkata";
@@ -1405,7 +1420,7 @@ class CustomerDetails{
   }
 ------------------------------------------------------------------------------------------
 
-class CustomerDetails2{
+class CustomerDetails5{
 // id, name,address,foodOrdered are instance variables, member variables, attributes of Customer //class. To access these attributes we require the objectname.attributename.
     int id;
     String name;
@@ -1428,7 +1443,7 @@ class CustomerDetails2{
     }    
 
     public static void main(String args[]) {
-     CustomerDetails2 customer=new CustomerDetails2();
+     CustomerDetails5 customer=new CustomerDetails5();
      customer.setData();
      customer.dispData();
        
@@ -1458,7 +1473,7 @@ if(i>10){
      System.out.println("i is smaller than 10");
       }
 ----------------------------------------------------------------------------------------------
-class Customer {
+class Customer6 {
 // id,name and address are the instance variables of the Customer class
 // or member variables
      int id;
@@ -1469,8 +1484,8 @@ class Customer {
     public static void main(String args[]) {
 // To access the member variables of a class, we need to create the object first and then
 // we try to access the members with the help of dot(.) operator
-    Customer customer=new Customer();
-  // new Customer() is creating a new object and the address of the newly create object is
+    Customer6 customer=new Customer6();
+  // new Customer6() is creating a new object and the address of the newly create object is
   // stored in the reference variable customer.
   // Scanner input=new Scanner(System.in);
   // input is a reference variable which is holding/storing the address of the newly created
@@ -1478,8 +1493,8 @@ class Customer {
   // If we have Employee class and we need to create the object, what
   // is the syntax of doing that?
   // Employee emp=new Employee();
-  // Customer customer;  We are declaring a reference variable of Customer type
-  // customer=new Customer(); // We created an object of Customer class and stored the 
+  // Customer6 customer;  We are declaring a reference variable of Customer type
+  // customer=new Customer6(); // We created an object of Customer class and stored the 
   // address of newly created object in the reference variable customer.;
      customer.id=1;
      customer.name="Rajesh";
@@ -1494,18 +1509,18 @@ class Customer {
 ---------------------------------------------------------------------------------------
 // local variables are the variables declared within a method
 // instance variables are declared within a class
-class Customer2 {
+class Customer7 {
      int id;
      String name;
      String address;
   public static void main(String args[]) {
-    Customer2 customer1=new Customer2();
-    Customer2 customer2=new Customer2();
+    Customer7 customer1=new Customer7();
+    Customer7 customer2=new Customer7();
     int id=3; // local variables(id,name and address) to the main
     // method are local to the main method and they have
     // any relationship with the id,name and address of Customer
     // class 
-    String name="Nitin" 
+    String name="Nitin"; 
     String address="Mumbai";
     customer1.id=1;
     customer1.name="Rajesh";
@@ -1531,7 +1546,7 @@ class Customer2 {
  }
     // Let us make the code more modular by creating some more methods apart
    // from the main method
-class Customer3 {
+class Customer8 {
      int id;
      String name;
      String address;
@@ -1553,7 +1568,7 @@ class Customer3 {
    }
 
   public static void main(String args[]) {
-     Customer3 customer=new Customer3();
+     Customer8 customer=new Customer8();
     // In this approach we are not directly accessing the member variables
     // though we have a liberty of doing so.
     // The below code will also work. 
@@ -1565,7 +1580,7 @@ class Customer3 {
  }
 
 
-class Customer3b {
+class Customer9 {
      int id;
      String name;
      String address;
@@ -1594,8 +1609,8 @@ class Customer3b {
    }
 
   public static void main(String args[]) {
-     Customer3b customer1=new Customer3b();
-     Customer3b customer2=new Customer3b(); 
+     Customer9 customer1=new Customer9();
+     Customer9 customer2=new Customer9(); 
        
       
        customer1.setData(1,"Ram","A/32 Indira Colony Delhi");
@@ -1612,14 +1627,14 @@ class Customer3b {
 
 
 
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 Q What are access specifier in Object Oriented Language like java?
 A access specifier decides the accessibility of class, member variable and methods from 
   other classes within the same package or different package. Currently we have not discussed
   much about packages and we are working with the default package.
 
   class Data{}  // The Data class is in the default package.
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
   package com.infosys;
 
   class Data{}
@@ -1636,7 +1651,7 @@ A public members can be accessed from anywhere. Anywhere means outside the class
 the package declaration.
 
 
-class Customer4 {
+class Customer10 {
      public int id;
      public String name;
      public String address;
@@ -1654,7 +1669,7 @@ class Customer4 {
    }
 
   public static void main(String args[]) {
-     Customer4 customer=new Customer4();
+     Customer10 customer=new Customer10();
     // In this approach we are not directly accessing the member variables
     // though we have a liberty of doing so.
     // The below code will also work. 
@@ -1669,7 +1684,7 @@ What about declaring the members as private?
 A private members can be accessed in the same class and can't be accessed outside the class
 where they are defined.
 
-class Customer5 {
+class Customer11 {
      private int id;
      private String name;
      private String address;
@@ -1687,7 +1702,7 @@ class Customer5 {
    }
 
   public static void main(String args[]) {
-     Customer5 customer=new Customer5();
+     Customer11 customer=new Customer11();
     // In this approach we are not directly accessing the member variables
     // though we have a liberty of doing so.
     // The below code will also work. 
@@ -1702,7 +1717,7 @@ So can we have multiple classes for the above approach?
 A Yes we can have. 
 
 
-class Customer6 {
+class Customer12 {
      private int id;
      private String name;
      private String address;
@@ -1720,10 +1735,10 @@ class Customer6 {
    }
 }
 
- class CustomerMain6{
+ class CustomerMain12{
   
   public static void main(String args[]) {
-     Customer6 customer=new Customer6();
+     Customer12 customer=new Customer12();
    
        customer.id=0;
        System.out.println(customer.id); 
@@ -1738,9 +1753,9 @@ called CustomerMain6.
 Is it possible to have two separate files for storing two different classes?
 A Yes. Let us plan for the files Customer7.java and CustomerMain7.java.
  
- // Customer7.java 
+ // Customer13.java 
 
-class Customer7 {
+class Customer13 {
      private int id;
      private String name;
      private String address;
@@ -1758,16 +1773,16 @@ class Customer7 {
    }
 }
 
-// CustomerMain7.java 
+// CustomerMain13.java 
 
-class CustomerMain7{
+class CustomerMain13{
   // id and setData and dispDAta
 	// are the private members of Customer class
 	// that is reason they are not accessible
 	// from main method which is in a different class
 	// called CustomerMain7
   public static void main(String args[]) {
-     Customer7 customer=new Customer7();
+     Customer13 customer=new Customer13();
    
        customer.id=0;
        System.out.println(customer.id); 
@@ -1780,9 +1795,9 @@ class CustomerMain7{
 
 
  
- // Customer8.java 
+ // Customer14.java 
 
-class Customer8 {
+class Customer14 {
      private int id;
      private String name;
      private String address;
@@ -1800,16 +1815,16 @@ class Customer8 {
    }
 }
 
-// CustomerMain8.java 
+// CustomerMain14.java 
 
-class CustomerMain8{
+class CustomerMain14{
   // id and setData and dispDAta
 	// are the private members of Customer class
 	// that is reason they are not accessible
 	// from main method which is in a different class
 	// called CustomerMain7
   public static void main(String args[]) {
-     Customer8 customer=new Customer8();
+     Customer14 customer=new Customer14();
    // The id cannot be accessed
      // as it is private to the Customer class
      /*  customer.id=0;
@@ -1818,19 +1833,19 @@ class CustomerMain8{
        customer.dispData();
     }
  }
---------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 What will happen if we make setData and dispData as with access specifier?
 A These are again accessible outside the class class. 
 
------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 What is difference between the access as default and public?
 A No difference until unless we work in different packages. Currently we are not working with the codes where the classes are in different package.
 Current the classes are in the same package so the effect of writing the members as default and public will be same.
 
 
-// Customer9.java 
+// Customer15.java 
 
-class Customer9 {
+class Customer15 {
      private int id;
      private String name;
      private String address;
@@ -1848,24 +1863,24 @@ class Customer9 {
    }
 }
 
-// CustomerMain9.java 
+// CustomerMain15.java 
 
-class CustomerMain9{
+class CustomerMain15{
   
   public static void main(String args[]) {
-     Customer9 customer=new Customer9();
+     Customer15 customer=new Customer15();
        customer.setData();
        customer.dispData();
     }
  }
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
 
 
-// Customer9b.java 
 
-class Customer9b {
+
+// Customer16.java 
+
+class Customer16 {
      private int id;
      private String name;
      private String address;
@@ -1883,12 +1898,12 @@ class Customer9b {
    }
 }
 
-// CustomerMain9b.java 
+// CustomerMain16.java 
 
-class CustomerMain9b{
+class CustomerMain16{
   
   public static void main(String args[]) {
-     Customer9b customer=new Customer9b();
+     Customer16 customer=new Customer16();
        customer.setData();
        customer.dispData();
     }
@@ -1900,9 +1915,9 @@ even we are not creating any package. As currently we are working in the default
 
 
 
-// Customer10.java 
+// Customer17.java 
 
-public class Customer10 {
+public class Customer17 {
      private int id;
      private String name;
      private String address;
@@ -1920,12 +1935,12 @@ public class Customer10 {
    }
 }
 
-// CustomerMain10.java 
+// CustomerMain17.java 
 
-public class CustomerMain10{
+public class CustomerMain17{
   
   public static void main(String args[]) {
-     Customer10 customer=new Customer10();
+     Customer17 customer=new Customer17();
        customer.setData();
        customer.dispData();
     }
@@ -1960,9 +1975,9 @@ public class Hello {
 In the above case, we have to keep the file name as Hello.java otherwise it will show compilation error.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- // Customer11.java 
+ // Customer18.java 
 
-public class Customer11 {
+public class Customer18 {
      private int id;
      private String name;
      private String address;
@@ -1981,13 +1996,13 @@ public class Customer11 {
    }
 }
 
-// CustomerMain11.java 
+// CustomerMain18.java 
 
-public class CustomerMain11{
+public class CustomerMain18{
   
   public static void main(String args[]) {
-     Customer11 customer1=new Customer11();
-     Customer11 customer2=new Customer11();
+     Customer18 customer1=new Customer18();
+     Customer18 customer2=new Customer18();
        customer1.setData(1,"Suresh","Chennai");  // method call
        customer1.dispData();
        customer2.setData(2,"Naresh","Hyderabad");
@@ -2424,15 +2439,15 @@ A Yes.
 }
 -------------------------------------------------------------------------------------------
 
-class Customer12 {
+class Customer19 {
 	public String customerId;
 	public String customerName;
 	public long contactNumber;
 	public String address;
-	public Customer12() {
+	public Customer19() {
 		System.out.println("Parameterless constructor called");
 	}
-	public Customer12(String cId, String cName, long contact, String add) {
+	public Customer19(String cId, String cName, long contact, String add) {
 		System.out.println("Parameterized constructor called");
 		customerId = cId;
 		customerName = cName;
@@ -2441,11 +2456,11 @@ class Customer12 {
 	}
 }
 
-public class Tester11 {
+public class Tester19 {
 	public static void main(String args[]) {
-		Customer12 customer1 = new Customer12("C103", "Jacob", 5648394590L,
+		Customer19 customer1 = new Customer19("C103", "Jacob", 5648394590L,
 				"13th Street, New York");
-		Customer12 customer2 = new Customer12();
+		Customer19 customer2 = new Customer19();
 	}
 }
 
@@ -2850,7 +2865,7 @@ single file, that class is made public which is having the main method.
 
 
 
-class Customer {
+class Customer20 {
 
 	private String customerId;
 	private String customerName;
@@ -2884,10 +2899,10 @@ class Customer {
 	
 }
 
-public class Tester {
+public class Tester20 {
 
 	public static void main(String args[]) {
-		Customer customer = new Customer();
+		Customer20 customer = new Customer20();
 		/*
 		 * customer.customerId = "C101"; customer.customerName = "Jack";
 		 * customer.contactNumber = 9870345687L; customer.address =
@@ -3027,7 +3042,7 @@ public class EmployeeMain2 {
                 employee2.setName("Akash");
                 employee2.setDesignation("AsstManager");
                 employee2.setDepartment("Sales");
-                employee2.setBAsic(20000);
+                employee2.setBasic(20000);
 		//System.out.println(employee1.getId());
 		int id=employee1.getId();
 		System.out.println(id);
@@ -3037,7 +3052,7 @@ public class EmployeeMain2 {
 		System.out.println(employee1.getDesignation());
 		System.out.println(employee1.getDepartment());
 		System.out.println(employee1.getBasic());
-               employee2.setBAsic(20000);
+               employee2.setBasic(20000);
 		System.out.println(employee2.getId());
 		System.out.println(employee2.getName());
 		System.out.println(employee2.getDesignation());
@@ -3049,7 +3064,7 @@ public class EmployeeMain2 {
 }
 
 --------------------------------------------------------------------------------------
-class Employee {
+class Employee3 {
 
 	String employeeId;
 	String employeeName;
@@ -3067,11 +3082,11 @@ class Employee {
 	}
 }
 
-class Tester {
+class Tester3 {
 
 	public static void main(String args[]) {
 
-		Employee employee = new Employee();
+		Employee3 employee = new Employee3();
 		employee.employeeId = "C101";
 		employee.employeeName = "Steve";
 		employee.salary = 650;
@@ -3505,7 +3520,7 @@ class ArrayDemo1 {
    System.out.println(num[i]);
     }  //end of loop
   }    // end of main
-}      // end of clas
+}      // end of class
 ---------------------------------------------------------------------------------------------
 class ArrayDemo2 {
   public static void main(String args[]) {
@@ -3637,6 +3652,7 @@ Observation:
 Q Can we have exactly same kind of code in java(without a class)?
 A No. We have to write the main within a class.
 
+import java.util.Scanner;
 class Main1{
    public static void main(String args[]) {
     int num[]=new int[10];
@@ -3658,6 +3674,7 @@ Observations:-
 Q Can I write this logic of adding numbers in a separate method other than main?
 A Yes. S
 
+import java.util.Scanner;
 class Main2{
 
    public static int add(int n[]){
@@ -3700,6 +3717,7 @@ Q Can we implement the above code by planning with Object oriented approach wher
 as instance variables and that too in a single class and we wont be making the add method as static.
 A Yes
 
+import java.util.Scanner;
 class Main3{
   private int num[];
   private int sum;
@@ -3751,9 +3769,9 @@ Observations:
 Q Can we have two separate classes, one for the logic with number and another having the main method and that too in different files?
 A Yes
 
-Number.java
+Number1.java
 
-public class Number{
+public class Number1{
   private int num[];
   private int sum;
 
@@ -3772,10 +3790,12 @@ public class Number{
 }
 
 
-Main4.java
-public class Main4 {
+NumberMain1.java
+
+import java.util.Scanner;
+public class NumberMain1 {
 public static void main(String args[]) {
-    Number number=new Number();
+    Number1 number=new Number1();
     int num[]=new int[10];
     Scanner scan=new Scanner(System.in);
    for(int i=0;i<num.length;i++){
@@ -3845,13 +3865,13 @@ Output
 
 ------------------------------------------------------------------
 
-class Customer {
+class Customer21 {
 	private String customerId;
 	private String customerName;
 	private long contactNumber;
 	private String address;
 
-	public Customer(String customerId, String customerName, long contactNumber,
+	public Customer21(String customerId, String customerName, long contactNumber,
 			String address) {
 		this.customerId = customerId;
 		this.customerName = customerName;
@@ -3897,9 +3917,9 @@ class Customer {
 		return priceAfterDiscount;
 	}
 }
-public class Tester {
+public class CustomerTester21 {
 	public static void main(String[] args) {
-		Customer customer1 = new Customer("C1001", "Sam", 9945000009L,
+		Customer21 customer1 = new Customer21("C1001", "Sam", 9945000009L,
 				"Carolina Street, Springfield, 62702");
 		System.out.println("Final amount to be paid: $" +customer1.payBill(20));
 	}
@@ -3930,14 +3950,14 @@ to take user input. So we should take Scanner object local to the method which i
 ------------------------------------------------------------------------------------------------------------------------------------
 
 
-class Customer {
+class Customer22 {
 	private String customerId;
 	private String customerName;
 	private long contactNumber;
 	private String address;
         private float deliveryCharge;
 
-	public Customer(String customerId, String customerName, long contactNumber,
+	public Customer22(String customerId, String customerName, long contactNumber,
 			String address) {
 		this.customerId = customerId;
 		this.customerName = customerName;
@@ -3984,9 +4004,9 @@ class Customer {
 		return priceAfterDiscount;
 	}
 }
-public class Tester {
+public class CustomerTester22 {
 	public static void main(String[] args) {
-		Customer customer1 = new Customer("C1001", "Sam", 9945000009L,
+		Customer22 customer1 = new Customer22("C1001", "Sam", 9945000009L,
 				"Carolina Street, Springfield, 62702");
 		System.out.println("Final amount to be paid: $" +customer1.payBill(20));
 	}
@@ -4001,14 +4021,14 @@ public class Tester {
 So how it is possible to have a single copy of an object or a variable?
 A Declare that object or variable as static.
 
-class Customer {
+class Customer23 {
 	private String customerId;
 	private String customerName;
 	private long contactNumber;
 	private String address;
         private static float deliveryCharge;
 
-	public Customer(String customerId, String customerName, long contactNumber,
+	public Customer23(String customerId, String customerName, long contactNumber,
 			String address) {
 		this.customerId = customerId;
 		this.customerName = customerName;
@@ -4055,9 +4075,9 @@ class Customer {
 		return priceAfterDiscount;
 	}
 }
-public class Tester {
+public class CustomerTester23 {
 	public static void main(String[] args) {
-		Customer customer1 = new Customer("C1001", "Sam", 9945000009L,
+		Customer23 customer1 = new Customer23("C1001", "Sam", 9945000009L,
 				"Carolina Street, Springfield, 62702");
 		System.out.println("Final amount to be paid: $" +customer1.payBill(20));
 	}
@@ -4232,7 +4252,7 @@ void dispData(){
   //System.out.println(staticNum);
 }
 
-static void dispStaticData(){
+static void dispStatic(){
   //System.out.println(num);
   // Number6 number=new Number6();
   //System.out.println(number.num);
@@ -4276,13 +4296,13 @@ Points for static members:
 * Though static member can be accessed with object but we should access static member with the class name.
 --------------------------------------------------------------------------------------------------------------------------
 Create a code to count the number of objects created.
-  public class Customer {
+  public class Customer24 {
    private int id;
    private String name;
    private String address;
    private static int count;
 
-      public Customer(){
+      public Customer24(){
        count++;
       }
 
@@ -4291,14 +4311,14 @@ Create a code to count the number of objects created.
       }
    }
 
-  public class CustomerMain{
+  public class CustomerMain24{
 
     public static void main(String args[]){
-     Customer cust=new Customer();
-     Customer cust2=new Customer();
-     System.out.println(Customer.countObject()); //2
-     Customer cust3=new Customer();
-     System.out.println(Customer.countObject()); //3
+     Customer24 cust=new Customer24();
+     Customer24 cust2=new Customer24();
+     System.out.println(Customer24.countObject()); //2
+     Customer24 cust3=new Customer24();
+     System.out.println(Customer24.countObject()); //3
    }
  }
   // the static members get the default value if not initialised. So in the above example count gets the initial value of 0
@@ -4367,7 +4387,7 @@ class Student
 	}
 }
 
-class Tester
+public class StudentTester
 {
 	public static void main(String s[])
 	{
@@ -4382,7 +4402,7 @@ class Tester
 
 //static demo for initialization using static block
 
-class Student
+class Student2
 {
 	private int roll;
 	private String name;
@@ -4397,7 +4417,7 @@ class Student
 	subject3="English";
 	}
 
-	public Student(int roll,String name)
+	public Student2(int roll,String name)
 	{
 		this.roll=roll;
 		this.name=name;
@@ -4419,12 +4439,12 @@ class Student
 	}
 }
 
-class Tester
+public class StudentTester2
 {
 	public static void main(String s[])
 	{
-		Student s1=new Student(101,"Anil");
-		Student s2=new Student(102,"Pooja");
+		Student2 s1=new Student2(101,"Anil");
+		Student2 s2=new Student2(102,"Pooja");
 		s1.display();
 		s2.display();
 	}
@@ -4434,7 +4454,7 @@ class Tester
 
 //static demo for static methods
 
-class Student
+class Student3
 {
 	private int roll;
 	private String name;
@@ -4449,7 +4469,7 @@ class Student
 	subject3="English";
 	}
 
-	public Student(int roll,String name)
+	public Student3(int roll,String name)
 	{
 		this.roll=roll;
 		this.name=name;
@@ -4474,16 +4494,16 @@ class Student
 	}
 }
 
-class Tester
+public class StudentTester3
 {
 	public static void main(String s[])
 	{
-		Student s1=new Student(101,"Anil");
-		Student s2=new Student(102,"Pooja");
+		Student3 s1=new Student3(101,"Anil");
+		Student3 s2=new Student3(102,"Pooja");
 		s1.display();
 		s2.display();
-		Student.setSubject1("JAVA");
-		System.out.println("changed subject "+Student.getSubject1());
+		Student3.setSubject1("JAVA");
+		System.out.println("changed subject "+Student3.getSubject1());
 		System.out.println("\n\n");
 		s1.display();
 		s2.display();
@@ -4495,7 +4515,7 @@ class Tester
 
 //static demo for static members as array
 
-class Student
+public class Student4
 {
 	private int roll;
 	private String name;
@@ -4507,7 +4527,7 @@ class Student
 	subject=new String[]{"Mathematics","Science","English"};
 	}
 
-	public Student(int roll,String name)
+	public Student4(int roll,String name)
 	{
 		this.roll=roll;
 		this.name=name;
@@ -4519,7 +4539,7 @@ class Student
 	public void setName(String name){this.name=name;}
 
 	public static String getSubject(int index){return subject[index];}
-	public static void setSubject(int index,String subject){Student.subject[index]=subject;}
+	public static void setSubject(int index,String subject){Student4.subject[index]=subject;}
 
 	public void display()
 	{
@@ -4534,17 +4554,17 @@ class Student
 	}
 }
 
-class Tester
+public class StudentTester4
 {
 	public static void main(String s[])
 	{
 		int index=1;
-		Student s1=new Student(101,"Anil");
-		Student s2=new Student(102,"Pooja");
+		Student4 s1=new Student4(101,"Anil");
+		Student4 s2=new Student4(102,"Pooja");
 		s1.display();
 		s2.display();
-		Student.setSubject(index,"Social Science");
-		System.out.println("changed subject "+Student.getSubject(index));
+		Student4.setSubject(index,"Social Science");
+		System.out.println("changed subject "+Student4.getSubject(index));
 		System.out.println("\n\n");
 		s1.display();
 		s2.display();
@@ -4556,7 +4576,7 @@ class Tester
 
 // static demo for autogeneration of values
 
-class Student
+public class Student5
 {
 	private int roll;
 	private String name;
@@ -4568,7 +4588,7 @@ class Student
 		subject=new String[]{"Mathematics","Science","English"};
 	}
 
-	public Student(String name)
+	public Student5(String name)
 	{
 		this.roll=Student.counter++;
 		this.name=name;
@@ -4581,7 +4601,7 @@ class Student
 	public void setName(String name){this.name=name;}
 
 	public static String getSubject(int index){return subject[index];}
-	public static void setSubject(int index,String subject){Student.subject[index]=subject;}
+	public static void setSubject(int index,String subject){Student5.subject[index]=subject;}
 
 	public void display()
 	{
@@ -4596,15 +4616,15 @@ class Student
 	}
 }
 
-class Tester
+public class StudentTester5
 {
 	public static void main(String s[])
 	{
 		int index=1;
-		Student s1=new Student("Anil");
-		Student s2=new Student("Pooja");
-		Student s3=new Student("Rani");
-		Student s4=new Student("Pavan");
+		Student5 s1=new Student5("Anil");
+		Student5 s2=new Student5("Pooja");
+		Student5 s3=new Student5("Rani");
+		Student5 s4=new Student5("Pavan");
 		s1.display();
 		s2.display();
 		s3.display();
@@ -4635,7 +4655,7 @@ Ans Yes .
 ------------------------------------------------------------------------------------
 Enter the details for two Employees 
 
- public class Employee {
+ public class Employee4 {
    private int id;
    private String name;
    private String cityNames[];
@@ -4643,15 +4663,15 @@ Enter the details for two Employees
    // setters/getters
  }
 
- public class EmployeeMain {
+ public class EmployeeMain4 {
    public static void main(String args[]) {
-    Employee emp1=new Employee();
-    Employee emp2=new Employee();
+    Employee4 emp1=new Employee4();
+    Employee4 emp2=new Employee4();
   }
 }
 ----------------------------------------------------------------------------------------------
 
- public class Employee {
+ public class Employee5 {
    private int id;
    private String name;
    private String cityNames[];
@@ -4661,9 +4681,9 @@ Enter the details for two Employees
 
 import java.util.Scanner;
 
-public class EmployeeMain {
+public class EmployeeMain5 {
    public static void main(String args[]) {
-   Employee employees[]=new Employee[2];  // We have created two reference variables to store two objects
+   Employee5 employees[]=new Employee5[2];  // We have created two reference variables to store two objects
    Scanner scan=new Scanner(System.in);
    String cityNames[]=new String[2];
    // of employee class 
@@ -4700,7 +4720,7 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Employ
 -----------------------------------------------------------
 The correct code:----
 
-public class Employee {
+public class Employee6 {
    private int id;
    private String name;
    private String cityNames[];
@@ -4729,9 +4749,9 @@ public void setCityNames(String[] cityNames) {
 
 import java.util.Scanner;
 
-public class EmployeeMain {
+public class EmployeeMain6 {
    public static void main(String args[]) {
-   Employee employees[]=new Employee[2];  // We have created two reference variables to store two objects
+   Employee6 employees[]=new Employee6[2];  // We have created two reference variables to store two objects
    Scanner scan=new Scanner(System.in);
    String cityNames[]=new String[2];
    // of employee class 
@@ -4739,7 +4759,7 @@ public class EmployeeMain {
    // String str[]=new String[2];
    for(int i=0;i<employees.length;i++)
    {
-	   employees[i]=new Employee();
+	   employees[i]=new Employee6();
 	   System.out.println("Enter the id for the employee");
 	   //int id=scan.nextInt();
 	   // employees[i].setId(id);
@@ -4755,7 +4775,7 @@ public class EmployeeMain {
        employees[i].setCityNames(cityNames);
    
    }
-   for(Employee emp : employees)
+   for(Employee6 emp : employees)
    {
 	   System.out.println(emp.getId());
 	   System.out.println(emp.getName());
@@ -4824,7 +4844,7 @@ Where we find the difference between instance variables, static variables and lo
 
 
 Department is having a Manager.
-public class Employee1{
+public class Employee7{
 private String empName;
 private String empId;
 private long contactNo;
@@ -4861,7 +4881,7 @@ public void setAddress(String address) {
 public class Department {
 private int deptId;
 private String deptName;
-private Employee1 manager;
+private Employee7 manager;
 public int getDeptId() {
 	return deptId;
 }
@@ -4877,7 +4897,7 @@ public void setDeptName(String deptName) {
 public Employee1 getManager() {
 	return manager;
 }
-public void setManager(Employee1 manager) {
+public void setManager(Employee7 manager) {
 	this.manager = manager;
 }
 
@@ -4885,9 +4905,9 @@ public void setManager(Employee1 manager) {
 
 }
 
-public class EmployeeDepartmentMain1 {
+public class EmployeeDepartmentMain7 {
    public static void main(String args[]){
-    Employee1 employee=new Employee1();
+    Employee7 employee=new Employee7();
     Department dept=new Department();
     employee.setEmpId("E0001");
     employee.setEmpName("Gajendra");
@@ -5118,7 +5138,7 @@ with the appointment
 
 It can have use a relationship
 
-public class Patient {
+public class Patient2 {
   private int age;
   private String name;
   private String gender;
@@ -5158,14 +5178,14 @@ public void setGender(String gender) {
 }
 
 
-public class PatientMain {
+public class PatientMain2 {
   public static void main(String args[]){
    Appointment appointment=new Appointment();
    appointment.setId(1);
    System.out.println(appointment.getId());    // 1
    System.out.println(appointment.getDate());  // null
 
-   Patient patient=new Patient();
+   Patient2 patient=new Patient2();
    patient.setAge(30);
    patient.setName("Romesh");
    patient.setGender("Male");
@@ -5624,7 +5644,7 @@ multiple classes.
 --------------------------------------------------------------------------
 //inheritance demo
 
-class Student
+public class StudentDetails4
 {
 	private int roll;
 	private String name;
@@ -5632,10 +5652,10 @@ class Student
 	private  int marks2;
 	protected float totalMarks;
 	private static int counter=1;
-	public Student(){}
-	public Student(String name,int marks1,int marks2)
+	public StudentDetails4(){}
+	public StudentDetails4(String name,int marks1,int marks2)
 	{
-		this.roll=Student.counter++;
+		this.roll=StudentDetails4.counter++;
 		this.name=name;
 		this.marks1=marks1;
 		this.marks2=marks2;
@@ -5658,7 +5678,7 @@ class Student
 	}
 }
 
-class SportStudent extends Student
+public class SportStudent extends StudentDetails4
 {
 	private String sportName;
 	
@@ -5674,7 +5694,7 @@ class SportStudent extends Student
 	public void setSportName(String sportName){this.sportName=sportName;}
 }
 
-class Tester
+public class SportStudentTester
 {
 	public static void main(String s[])
 	{
@@ -5697,7 +5717,7 @@ Inheritance
     public void dispBase(){
       System.out.println(num);
     }
-
+}
  public class Derived1 extends Base1 {
     private int num2;
    /* In the following method in setDerived method we are trying to access the private '
@@ -5718,8 +5738,8 @@ Inheritance
    }
  }
 
-  public class InheritDemo1{
-  {
+  public class Base1Derived1Main{
+  
   public static void main(String args[])
   {
        Base1 base=new Base1();
@@ -5911,7 +5931,7 @@ public class Tester3 {
    }
  }
  
-  public class Inherit2{
+  public class Base2Derived2Main2{
     public static void main(String args[]){
      Derived2 derived=new Derived2();
     }
@@ -5950,12 +5970,12 @@ public class Base4 {
     } 
  }
  
-  public class Inherit4{
+  public class Base4Derived4Main{
     public static void main(String args[]){
      Derived4 derived=new Derived4(1,2);
     }
   }      
-  }
+  
 -----------------------------------------------------------------------------------------------
 
 // So parameterized constructor of base class needs to be called explicitly with super keyword
@@ -5974,12 +5994,12 @@ public class Base5 {
     } 
  }
  
-  public class Inherit5{
+  public class Base5Derived5Main{
     public static void main(String args[]){
      Derived5 derived=new Derived5(1,2);
     }
   }      
-  }
+  
 --------------------------------------------------------------------------------
 // Compilation error as Derived class parameterized will call the default/parameterless
 // constructor but as we have Parameterized constructorin the base class so the default constructor is not provided in the base and we have explicitly declare a parameterless constructor in the base class.
@@ -5998,12 +6018,12 @@ public class Base6 {
     } 
  }
  
-  public class Inherit6{
+  public class Base6Derived6Main{
     public static void main(String args[]){
      Derived6 derived=new Derived6(1,2);
     }
   }      
-  }
+  
 ----------------------------------------------------------------------------------------------------
 public class Numbers{
   
